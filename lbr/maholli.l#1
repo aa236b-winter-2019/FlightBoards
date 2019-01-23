@@ -6668,14 +6668,14 @@ Source: &lt;a href="https://www.everspin.com/file/217/download"&gt; Datasheet &l
 <devices>
 <device name="" package="SO8">
 <connects>
-<connect gate="G$1" pin="!MR" pad="1"/>
-<connect gate="G$1" pin="!PFO" pad="5"/>
-<connect gate="G$1" pin="!RESET" pad="7"/>
-<connect gate="G$1" pin="!WDO" pad="8"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="PFI" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="WDI" pad="6"/>
+<connect gate="G$1" pin="!MR" pad="2"/>
+<connect gate="G$1" pin="!PFO" pad="7"/>
+<connect gate="G$1" pin="!RESET" pad="8"/>
+<connect gate="G$1" pin="!WDO" pad="6"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="PFI" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="WDI" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

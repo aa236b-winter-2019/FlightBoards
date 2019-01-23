@@ -5301,7 +5301,6 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="MANUFACTURER_PART_NUMBER" value="MAX706R" constant="no"/>
-<attribute name="MAX706R" value="" constant="no"/>
 <attribute name="VENDOR" value="ON Semiconductor" constant="no"/>
 </technology>
 </technologies>
@@ -6655,28 +6654,6 @@ Source: &lt;a href="https://www.everspin.com/file/217/download"&gt; Datasheet &l
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:4290517/2"/>
 </package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX706R">
-<gates>
-<gate name="G$1" symbol="MAX708RESA-T" x="-20.32" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="SO8">
-<connects>
-<connect gate="G$1" pin="!MR" pad="1"/>
-<connect gate="G$1" pin="!PFO" pad="5"/>
-<connect gate="G$1" pin="!RESET" pad="7"/>
-<connect gate="G$1" pin="!WDO" pad="8"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="PFI" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="WDI" pad="6"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
