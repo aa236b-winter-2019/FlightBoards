@@ -10805,7 +10805,7 @@ Validate SPI pinout of SAMD21</text>
 <plain>
 <text x="30.48" y="66.04" size="1.778" layer="97">Battery Current Sensor</text>
 <text x="154.94" y="7.62" size="3.175" layer="94">Matt Poole</text>
-<text x="193.04" y="76.2" size="2.54" layer="95">GPS Power</text>
+<text x="193.04" y="76.2" size="2.54" layer="95">Payload Power</text>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="81.28" width="0.2032" layer="97" style="longdash"/>
 <wire x1="147.32" y1="81.28" x2="248.92" y2="81.28" width="0.2032" layer="97" style="longdash"/>
 <text x="241.3" y="7.62" size="2.54" layer="94">1</text>
@@ -11200,7 +11200,7 @@ Connectors</text>
 <junction x="195.58" y="53.34"/>
 </segment>
 </net>
-<net name="ENAB_GPS" class="0">
+<net name="ENAB_PAYLOAD" class="0">
 <segment>
 <wire x1="180.34" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 <label x="172.72" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -11308,7 +11308,7 @@ Connectors</text>
 <pinref part="Q15" gate="A" pin="G"/>
 </segment>
 </net>
-<net name="GPS_PWR_IN" class="0">
+<net name="PL_PWR_IN" class="0">
 <segment>
 <label x="241.3" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="Q16" gate="G$1" pin="D"/>

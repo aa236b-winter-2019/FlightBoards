@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="35" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10482,7 +10482,7 @@ Validate SPI pinout of SAMD21</text>
 <text x="27.94" y="177.8" size="2.54" layer="97">External WDT</text>
 <text x="33.02" y="137.16" size="2.54" layer="98" align="top-left">Decide on HOLD and !WP
 </text>
-<text x="15.24" y="53.34" size="2.54" layer="97" align="top-left">HopeRF RFM23B module at 3.3V</text>
+<text x="15.24" y="53.34" size="2.54" layer="97" align="top-left">HopeRF RFM23B module at 5V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -11570,9 +11570,12 @@ Connectors</text>
 <net name="5V" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="VOUT1"/>
-<wire x1="35.88" y1="107.22" x2="35.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="35.88" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
-<label x="30.48" y="106.68" size="1.778" layer="95"/>
+<wire x1="35.88" y1="107.22" x2="35.88" y2="107.18" width="0.1524" layer="91"/>
+<wire x1="35.88" y1="107.18" x2="33.02" y2="107.18" width="0.1524" layer="91"/>
+<label x="30.98" y="107.68" size="1.778" layer="95"/>
+<pinref part="U9" gate="G$1" pin="SENSE"/>
+<wire x1="35.88" y1="103.22" x2="33.02" y2="103.22" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="103.22" x2="33.02" y2="107.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
