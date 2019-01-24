@@ -12325,6 +12325,7 @@ Ichrg=988*Vprog/Rprog
 <text x="196.596" y="106.934" size="1.778" layer="97">Rail Switch
 Connection</text>
 <text x="94.996" y="49.276" size="2.54" layer="97" align="top-left">Solar Panel Connectors</text>
+<text x="180.34" y="69.342" size="2.54" layer="97" align="top-left">Payload Connector</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
