@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="35" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16428,12 +16428,16 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="BrownSpaceEngineering" deviceset="DFLS130L" device="" value="DFLS130L"/>
+<part name="R25" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="4K7"/>
+<part name="R26" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="4K7"/>
+<part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="R27" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
+<part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <description>Avionics</description>
 <plain>
-<text x="154.94" y="7.62" size="3.175" layer="94">Matt Poole</text>
 <text x="241.3" y="7.62" size="2.54" layer="94">1</text>
 <text x="93.98" y="50.8" size="2.54" layer="98" align="top-left">To Do:
 Characterize power consumption
@@ -16447,6 +16451,7 @@ Validate SPI pinout of SAMD21</text>
 </text>
 <text x="15.24" y="53.34" size="2.54" layer="97" align="top-left">HopeRF RFM23B module at 5V</text>
 <text x="131.94" y="179.8" size="2.54" layer="97">SAM51 MCU</text>
+<text x="152.94" y="6.62" size="3.175" layer="94">Damian Loya, Matt Poole, Tane Tatum</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -16596,6 +16601,24 @@ Validate SPI pinout of SAMD21</text>
 <instance part="GND40" gate="1" x="206" y="152" smashed="yes" rot="R90">
 <attribute name="VALUE" x="208.54" y="149.46" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R25" gate="G$1" x="202.16" y="134.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="196.25" y="134.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="197.25" y="136.858" size="1.778" layer="96"/>
+</instance>
+<instance part="R26" gate="G$1" x="209.16" y="132.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="210.25" y="135.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="210.25" y="137.858" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="206" y="142" smashed="yes">
+<attribute name="VALUE" x="204.984" y="145.556" size="1.778" layer="96"/>
+</instance>
+<instance part="R27" gate="G$1" x="197.16" y="115.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="199.25" y="112.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="190.25" y="112.858" size="1.778" layer="96"/>
+</instance>
+<instance part="GND41" gate="1" x="197" y="107" smashed="yes">
+<attribute name="VALUE" x="194.46" y="104.46" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16716,6 +16739,12 @@ Validate SPI pinout of SAMD21</text>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="201.08" y1="152" x2="203.46" y2="152" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND41" gate="1" pin="GND"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="197" y1="109.54" x2="197.16" y2="109.54" width="0.1524" layer="91"/>
+<wire x1="197.16" y1="109.54" x2="197.16" y2="110.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -16788,6 +16817,16 @@ Validate SPI pinout of SAMD21</text>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="110" y1="171" x2="110" y2="169.08" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
+<wire x1="202.16" y1="140.02" x2="202.16" y2="142" width="0.1524" layer="91"/>
+<wire x1="202.16" y1="142" x2="206" y2="142" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="206" y1="142" x2="209.16" y2="142" width="0.1524" layer="91"/>
+<wire x1="209.16" y1="142" x2="209.16" y2="138.02" width="0.1524" layer="91"/>
+<junction x="206" y="142"/>
+</segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
@@ -16797,6 +16836,16 @@ Validate SPI pinout of SAMD21</text>
 <wire x1="66.04" y1="109.22" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="PA13"/>
+<wire x1="179" y1="128" x2="187" y2="128" width="0.1524" layer="91"/>
+<label x="218" y="128" size="0.6096" layer="95" xref="yes"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="187" y1="128" x2="209.16" y2="127.86" width="0.1524" layer="91"/>
+<wire x1="209.16" y1="127.86" x2="209.16" y2="128" width="0.1524" layer="91"/>
+<wire x1="209.16" y1="128" x2="218" y2="128" width="0.1524" layer="91"/>
+<junction x="209.16" y="127.86"/>
+</segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
@@ -16804,6 +16853,16 @@ Validate SPI pinout of SAMD21</text>
 <label x="68.58" y="116.84" size="1.27" layer="95" xref="yes"/>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="PA12"/>
+<label x="218" y="130" size="0.6096" layer="95" xref="yes"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="179" y1="130" x2="202.16" y2="130" width="0.1524" layer="91"/>
+<wire x1="202.16" y1="130" x2="202.16" y2="129.86" width="0.1524" layer="91"/>
+<wire x1="202.16" y1="129.86" x2="218" y2="129.86" width="0.1524" layer="91"/>
+<wire x1="218" y1="129.86" x2="218" y2="130" width="0.1524" layer="91"/>
+<junction x="202.16" y="129.86"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -16860,6 +16919,16 @@ Validate SPI pinout of SAMD21</text>
 <pinref part="U1" gate="A" pin="WDI"/>
 <label x="27.94" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="27.94" y1="144.78" x2="30.48" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="PA16"/>
+<wire x1="179" y1="122" x2="197" y2="122" width="0.1524" layer="91"/>
+<label x="206" y="122" size="0.75" layer="95" xref="yes"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="197" y1="122" x2="206" y2="122" width="0.1524" layer="91"/>
+<wire x1="197.16" y1="121.02" x2="197" y2="121.02" width="0.1524" layer="91"/>
+<wire x1="197" y1="121.02" x2="197" y2="122" width="0.1524" layer="91"/>
+<junction x="197" y="122"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -17065,7 +17134,6 @@ Validate SPI pinout of SAMD21</text>
 <description>Power</description>
 <plain>
 <text x="30.48" y="66.04" size="1.778" layer="97">Battery Current Sensor</text>
-<text x="154.94" y="7.62" size="3.175" layer="94">Matt Poole</text>
 <text x="193.04" y="76.2" size="2.54" layer="95">Payload Power</text>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="81.28" width="0.2032" layer="97" style="longdash"/>
 <wire x1="147.32" y1="81.28" x2="248.92" y2="81.28" width="0.2032" layer="97" style="longdash"/>
@@ -17079,6 +17147,7 @@ Validate SPI pinout of SAMD21</text>
 monitors charge current using:
 Ichrg=988*Vprog/Rprog
 </text>
+<text x="153.94" y="6.62" size="3.175" layer="94">Damian Loya, Matt Poole, Tane Tatum</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -17944,7 +18013,7 @@ Ichrg=988*Vprog/Rprog
 <sheet>
 <description>Connectors</description>
 <plain>
-<text x="154.94" y="7.62" size="3.175" layer="94">Zac Manchester, Max Holliday</text>
+<text x="154.94" y="7.62" size="3.175" layer="94">Damian Loya, Matt Poole, Tane Tatum</text>
 <text x="241.3" y="7.62" size="2.54" layer="94">5</text>
 <text x="33.274" y="81.788" size="2.54" layer="97" align="top-left">JTAG</text>
 <text x="127.508" y="176.276" size="2.54" layer="97">Power Connectors: USB, Barrel Plug, Battery</text>
@@ -18558,6 +18627,7 @@ Connection</text>
 <text x="67.564" y="149.352" size="2.54" layer="95">Power Relay A</text>
 <text x="113.284" y="177.292" size="2.54" layer="97">Burn Wire Control (Antenna Depolyment)</text>
 <text x="108.204" y="117.856" size="2.54" layer="91">H-Bridges</text>
+<text x="156.94" y="6.62" size="3.175" layer="94">Damian Loya, Matt Poole, Tane Tatum</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
