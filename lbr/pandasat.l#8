@@ -184,7 +184,7 @@
 <wire x1="-2.2" y1="-3" x2="2.2" y2="-3" width="0.127" layer="51"/>
 <text x="-1.58" y="2.66" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.88" y="-4.04" size="0.6096" layer="27">&gt;VALUE</text>
-<smd name="P$1" x="-0.005" y="-0.33" dx="2.46" dy="2.31" layer="1" roundness="10"/>
+<smd name="PPAD" x="-0.005" y="-0.33" dx="2.46" dy="2.31" layer="1" roundness="10"/>
 </package>
 </packages>
 <symbols>

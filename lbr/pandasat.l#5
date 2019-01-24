@@ -467,6 +467,18 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="BK-18650" prefix="J">
+<gates>
+<gate name="G$1" symbol="BK-18650" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

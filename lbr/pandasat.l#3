@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -500,7 +500,17 @@
 <gate name="G$1" symbol="BK-18650" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="BK-18650">
+<connects>
+<connect gate="G$1" pin="1N" pad="1"/>
+<connect gate="G$1" pin="1P" pad="8"/>
+<connect gate="G$1" pin="2N" pad="2"/>
+<connect gate="G$1" pin="2P" pad="7"/>
+<connect gate="G$1" pin="3N" pad="3"/>
+<connect gate="G$1" pin="3P" pad="6"/>
+<connect gate="G$1" pin="4N" pad="4"/>
+<connect gate="G$1" pin="4P" pad="5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
