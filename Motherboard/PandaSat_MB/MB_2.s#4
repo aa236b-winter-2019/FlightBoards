@@ -18459,6 +18459,7 @@ Validate SPI pinout of SAMD21</text>
 <text x="15.24" y="53.34" size="2.54" layer="97" align="top-left">HopeRF RFM23B module at 5V</text>
 <text x="131.94" y="179.8" size="2.54" layer="97">SAM51 MCU</text>
 <text x="152.94" y="6.62" size="3.175" layer="94">Damian Loya, Matt Poole, Tane Tatum</text>
+<text x="14.24" y="12.34" size="2.54" layer="97" align="top-left">Todo: Hook up to MCU</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>

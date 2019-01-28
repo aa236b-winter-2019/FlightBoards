@@ -18467,24 +18467,29 @@ Connection</text>
 <pinref part="J10" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="VBURN1" class="0">
+<net name="VBURNX" class="0">
 <segment>
 <wire x1="92.456" y1="32.766" x2="93.472" y2="32.766" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="5"/>
 <label x="93.472" y="32.766" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VBURN2" class="0">
+<net name="VBURNY" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="5"/>
 <wire x1="111.252" y1="33.02" x2="112.268" y2="33.02" width="0.1524" layer="91"/>
 <label x="112.268" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="N$27" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="5"/>
+<wire x1="129.286" y1="33.02" x2="129.286" y2="33" width="0.1524" layer="91"/>
+<wire x1="129.286" y1="33" x2="130" y2="33" width="0.1524" layer="91"/>
+<label x="130" y="33" size="0.8128" layer="95" xref="yes"/>
+</segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="5"/>
 <wire x1="92.456" y1="12.7" x2="93.472" y2="12.7" width="0.1524" layer="91"/>
+<label x="93" y="12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PL_UART_RX" class="0">
@@ -18936,20 +18941,6 @@ Connection</text>
 <junction x="57.404" y="159.512"/>
 </segment>
 </net>
-<net name="VBURN2" class="0">
-<segment>
-<pinref part="Q11" gate="G$1" pin="D"/>
-<wire x1="176.784" y1="131.572" x2="182.372" y2="131.572" width="0.1524" layer="91"/>
-<label x="182.626" y="131.572" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VBURN1" class="0">
-<segment>
-<pinref part="Q10" gate="G$1" pin="D"/>
-<wire x1="176.784" y1="151.892" x2="183.896" y2="151.892" width="0.1524" layer="91"/>
-<label x="183.896" y="151.892" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="DXY_FAULT" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="NFAULT"/>
@@ -19065,6 +19056,20 @@ Connection</text>
 <pinref part="U12" gate="G$1" pin="AOUT2"/>
 <wire x1="97.79" y1="96.52" x2="93.218" y2="96.52" width="0.1524" layer="91"/>
 <label x="93.218" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VBURNX" class="0">
+<segment>
+<pinref part="Q10" gate="G$1" pin="D"/>
+<wire x1="176.784" y1="151.892" x2="183.896" y2="151.892" width="0.1524" layer="91"/>
+<label x="183.896" y="151.892" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="VBURNY" class="0">
+<segment>
+<pinref part="Q11" gate="G$1" pin="D"/>
+<wire x1="176.784" y1="131.572" x2="182.372" y2="131.572" width="0.1524" layer="91"/>
+<label x="182.626" y="131.572" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
