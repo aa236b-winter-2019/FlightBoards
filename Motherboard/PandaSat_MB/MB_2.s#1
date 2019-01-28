@@ -20374,7 +20374,7 @@ Ichrg=988*Vprog/Rprog
 <junction x="195.58" y="53.34"/>
 </segment>
 </net>
-<net name="ENAB_PAYLOAD" class="0">
+<net name="PL_PWR_ENAB" class="0">
 <segment>
 <wire x1="180.34" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 <label x="172.72" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
