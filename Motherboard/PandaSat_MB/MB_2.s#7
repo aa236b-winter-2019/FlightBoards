@@ -18869,6 +18869,7 @@ Source: www.kingbright.com</description>
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
+<part name="R37" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -19094,6 +19095,10 @@ Validate SPI pinout of SAMD21</text>
 <instance part="R24" gate="G$1" x="109.688" y="164.708" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.778" y="166.2526" size="1.778" layer="95"/>
 <attribute name="VALUE" x="111.778" y="158.626" size="1.778" layer="96"/>
+</instance>
+<instance part="R37" gate="G$1" x="216.06" y="150.16" smashed="yes">
+<attribute name="NAME" x="224.75" y="149.3414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="217.75" y="148.142" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -19651,13 +19656,6 @@ Validate SPI pinout of SAMD21</text>
 <junction x="188" y="152"/>
 </segment>
 </net>
-<net name="L1_PROG" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="PA02"/>
-<wire x1="179" y1="150" x2="188" y2="150" width="0.1524" layer="91"/>
-<label x="185" y="150" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="AREF" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PA03"/>
@@ -19670,13 +19668,6 @@ Validate SPI pinout of SAMD21</text>
 <pinref part="JP7" gate="A" pin="1"/>
 <wire x1="114.54" y1="65" x2="116" y2="65" width="0.1524" layer="91"/>
 <label x="117" y="61" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="A4" class="0">
-<segment>
-<pinref part="U8" gate="G$1" pin="PA04"/>
-<wire x1="179" y1="146" x2="188" y2="146" width="0.1524" layer="91"/>
-<label x="185" y="146" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I_BATT" class="0">
@@ -19939,6 +19930,22 @@ Validate SPI pinout of SAMD21</text>
 <pinref part="U8" gate="G$1" pin="PB15"/>
 <wire x1="135" y1="104" x2="126" y2="104" width="0.1524" layer="91"/>
 <label x="118" y="104" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="PA02"/>
+<pinref part="R37" gate="G$1" pin="1"/>
+<wire x1="179" y1="150" x2="210.98" y2="150" width="0.1524" layer="91"/>
+<wire x1="210.98" y1="150" x2="210.98" y2="150.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="L1_PROG" class="0">
+<segment>
+<pinref part="R37" gate="G$1" pin="2"/>
+<wire x1="221.14" y1="150.16" x2="221.14" y2="150" width="0.1524" layer="91"/>
+<wire x1="221.14" y1="150" x2="229" y2="150" width="0.1524" layer="91"/>
+<label x="224" y="150" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

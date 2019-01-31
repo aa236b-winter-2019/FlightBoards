@@ -9,7 +9,7 @@
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -2818,7 +2818,7 @@ distributor RS 112-3794</description>
 <clearance class="0" value="0.127"/>
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2833,9 +2833,9 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="layerSetup" value="(1+2*15+16)"/>
+<param name="mtCopper" value="0.0356mm 0.0178mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0178mm 0.0356mm"/>
+<param name="mtIsolate" value="0.1702mm 47mil 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.1702mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -3230,9 +3230,9 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="-115.57" y="-13.716" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-115.57" y="-13.716" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J7" library="pandasat" package="BK-18650" value="BK-18650" x="-168.91" y="26.924" smashed="yes">
-<attribute name="NAME" x="-208.01" y="66.624" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="-133.41" y="66.724" size="0.6096" layer="27"/>
+<element name="J7" library="pandasat" package="BK-18650" value="BK-18650" x="-47.752" y="49.276" smashed="yes" rot="R270">
+<attribute name="NAME" x="-8.052" y="88.376" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="-7.952" y="13.776" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="JP1" library="SparkFun-Passives" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX" value="" x="-165.1" y="166.624" smashed="yes">
 <attribute name="NAME" x="-166.37" y="167.894" size="0.4064" layer="25"/>
@@ -4835,8 +4835,8 @@ design rules under a new name.</description>
 <contactref element="J7" pad="5"/>
 <contactref element="D3" pad="1"/>
 <wire x1="-180.4722" y1="143.764" x2="-154.94" y2="144.694" width="0" layer="19" extent="1-1"/>
-<wire x1="-132.46" y1="17.274" x2="-154.94" y2="144.694" width="0" layer="19" extent="1-1"/>
-<wire x1="-132.46" y1="-0.881" x2="-132.46" y2="17.274" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.402" y1="12.826" x2="-154.94" y2="144.694" width="0" layer="19" extent="1-1"/>
+<wire x1="-75.557" y1="12.826" x2="-57.402" y2="12.826" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
 <contactref element="J3" pad="3"/>
@@ -4846,8 +4846,8 @@ design rules under a new name.</description>
 <contactref element="JP12" pad="1"/>
 <wire x1="-180.72" y1="78.994" x2="-202.1078" y2="143.764" width="0" layer="19" extent="1-1"/>
 <wire x1="-185.42" y1="75.994" x2="-180.72" y2="78.994" width="0" layer="19" extent="1-1"/>
-<wire x1="-205.36" y1="54.729" x2="-185.42" y2="75.994" width="0" layer="19" extent="1-1"/>
-<wire x1="-205.36" y1="36.574" x2="-205.36" y2="54.729" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.947" y1="85.726" x2="-185.42" y2="75.994" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.102" y1="85.726" x2="-19.947" y2="85.726" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOY_2">
 <contactref element="JP16" pad="4"/>
@@ -4869,9 +4869,9 @@ design rules under a new name.</description>
 <contactref element="J7" pad="7"/>
 <contactref element="J7" pad="3"/>
 <contactref element="J7" pad="4"/>
-<wire x1="-205.36" y1="17.274" x2="-205.36" y2="-0.881" width="0" layer="19" extent="1-1"/>
-<wire x1="-132.46" y1="36.574" x2="-205.36" y2="17.274" width="0" layer="19" extent="1-1"/>
-<wire x1="-132.46" y1="54.729" x2="-132.46" y2="36.574" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.402" y1="85.726" x2="-75.557" y2="85.726" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.102" y1="12.826" x2="-57.402" y2="85.726" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.947" y1="12.826" x2="-38.102" y2="12.826" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOY_1">
 <contactref element="JP15" pad="2"/>
