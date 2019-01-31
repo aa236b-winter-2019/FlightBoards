@@ -283,7 +283,7 @@
 <attribute name="VALUE" x="30.48" y="63.5" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="114.3" y="40.64" smashed="yes"/>
-<instance part="1" gate="G$1" x="63.5" y="58.42" smashed="yes" rot="R90"/>
+<instance part="1" gate="G$1" x="7.62" y="50.8" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -356,8 +356,10 @@
 <pinref part="24" gate="G$1" pin="P$2"/>
 <wire x1="60.96" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 <junction x="60.96" y="53.34"/>
-<pinref part="1" gate="G$1" pin="P$1"/>
-<wire x1="60.96" y1="55.88" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="53.34" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="POS"/>
+<wire x1="25.4" y1="60.96" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -397,16 +399,6 @@
 <wire x1="101.6" y1="45.72" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$3"/>
 <wire x1="101.6" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="D5" gate="G$1" pin="POS"/>
-<wire x1="25.4" y1="60.96" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="1" gate="G$1" pin="P$2"/>
-<wire x1="60.96" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="68.58" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
