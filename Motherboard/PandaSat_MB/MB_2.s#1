@@ -21993,12 +21993,6 @@ Connection</text>
 <label x="150.368" y="94.996" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VBURN1" class="0">
-<segment>
-<wire x1="197.774" y1="163.262" x2="204.886" y2="163.262" width="0.1524" layer="91"/>
-<label x="204.886" y="163.262" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="VINT_1" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="VREF"/>
@@ -22027,7 +22021,7 @@ Connection</text>
 <label x="150.876" y="74.676" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="VBURN1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="D@1"/>
 <pinref part="U$2" gate="G$1" pin="D@2"/>
@@ -22041,6 +22035,9 @@ Connection</text>
 <wire x1="197.3" y1="163.26" x2="197.84" y2="163.26" width="0.1524" layer="91"/>
 <wire x1="197.84" y1="163.26" x2="197.84" y2="163.25" width="0.1524" layer="91"/>
 <junction x="197.3" y="163.26"/>
+<wire x1="197.3" y1="163.26" x2="197.3" y2="163.25" width="0.1524" layer="91"/>
+<wire x1="197.3" y1="163.25" x2="200.15" y2="163.25" width="0.1524" layer="91"/>
+<label x="200.29" y="163.2" size="1" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$58" class="0">

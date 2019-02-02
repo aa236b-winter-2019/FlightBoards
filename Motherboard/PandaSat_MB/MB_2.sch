@@ -20021,13 +20021,20 @@ Ichrg=988*Vprog/Rprog
 </segment>
 <segment>
 <pinref part="C42" gate="G$1" pin="P$2"/>
+<pinref part="C41" gate="G$1" pin="P$2"/>
+<wire x1="4.5" y1="12.96" x2="8.5" y2="12.96" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="P$2"/>
+<wire x1="8.5" y1="12.96" x2="12.5" y2="12.96" width="0.1524" layer="91"/>
+<junction x="8.5" y="12.96"/>
+<pinref part="C39" gate="G$1" pin="P$2"/>
+<wire x1="12.5" y1="12.96" x2="17" y2="12.96" width="0.1524" layer="91"/>
+<junction x="12.5" y="12.96"/>
 <pinref part="C38" gate="G$1" pin="P$2"/>
-<wire x1="4.5" y1="12.96" x2="17" y2="12.96" width="0.1524" layer="91"/>
 <wire x1="17" y1="12.96" x2="21.5" y2="12.96" width="0.1524" layer="91"/>
 <junction x="17" y="12.96"/>
 <pinref part="GND49" gate="1" pin="GND"/>
-<wire x1="17.3" y1="8.66" x2="17.3" y2="12.96" width="0.1524" layer="91"/>
-<wire x1="17.3" y1="12.96" x2="17" y2="12.96" width="0.1524" layer="91"/>
+<wire x1="17" y1="12.96" x2="17" y2="8.66" width="0.1524" layer="91"/>
+<wire x1="17" y1="8.66" x2="17.3" y2="8.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREG_IN" class="0">
