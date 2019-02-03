@@ -678,6 +678,22 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="RBR5LAM60ATF" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RBR5LAM60ATF" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-128">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

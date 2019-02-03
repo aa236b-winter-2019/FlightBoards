@@ -239,6 +239,26 @@
 <text x="-1.58" y="2.66" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.88" y="-4.04" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="VSSOP-8">
+<smd name="P$1" x="-0.25" y="-1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$2" x="0.25" y="-1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$3" x="0.75" y="-1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$4" x="-0.75" y="-1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$5" x="-0.75" y="1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$6" x="-0.25" y="1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$7" x="0.25" y="1.42" dx="0.22" dy="0.4" layer="1"/>
+<smd name="P$8" x="0.75" y="1.42" dx="0.22" dy="0.4" layer="1"/>
+<text x="-1.56" y="1.94" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.78" y="-2.46" size="0.6096" layer="27">&gt;VALUE</text>
+<wire x1="-1.01" y1="-1.15" x2="-1.01" y2="1.15" width="0.1524" layer="21"/>
+<wire x1="-1.01" y1="1.15" x2="-1" y2="1.15" width="0.1524" layer="21"/>
+<wire x1="-1.23" y1="-1.06" x2="-1.23" y2="-1.07" width="0.1524" layer="21"/>
+<wire x1="-1.23" y1="-1.07" x2="-1.22" y2="-1.07" width="0.1524" layer="21"/>
+<wire x1="1" y1="1.15" x2="1" y2="-1.16" width="0.1524" layer="21"/>
+<wire x1="-1.01" y1="-1.17" x2="-1.01" y2="1.16" width="0.1524" layer="51"/>
+<wire x1="-1.01" y1="1.16" x2="-1" y2="1.16" width="0.1524" layer="51"/>
+<wire x1="1" y1="1.17" x2="1" y2="-1.15" width="0.1524" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATSAMD51">

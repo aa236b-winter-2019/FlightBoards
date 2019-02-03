@@ -460,12 +460,11 @@
 </symbol>
 <symbol name="RBR5LAM60ATF">
 <pin name="2" x="-12.7" y="0" length="middle"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-7.62" y="2.54"/>
-<vertex x="-7.62" y="-2.54"/>
-<vertex x="-5.08" y="0"/>
-</polygon>
 <pin name="1" x="0" y="0" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
