@@ -17891,8 +17891,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="R13" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="R15" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
+<<<<<<< HEAD
 <part name="Q3" library="maholli" deviceset="IRLML2803TRPBF" device="" value="IRLML2803"/>
 <part name="Q4" library="maholli" deviceset="IRLML2803TRPBF" device="" value="IRLML2803"/>
+=======
+<part name="Q13" library="maholli" deviceset="IRLML2803TRPBF" device="" value="IRLML2803"/>
+<part name="Q14" library="maholli" deviceset="IRLML2803TRPBF" device="" value="IRLML2803"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <part name="K4" library="maholli" deviceset="PE014005" device="" value="PE014006"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -18028,10 +18033,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R37" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<<<<<<< HEAD
 <part name="D2" library="pandasat" deviceset="RBR5LAM60ATF" device=""/>
 <part name="Q5" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL-SOIC8" device="SOIC8"/>
 <part name="Q6" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL-SOIC8" device="SOIC8"/>
 <part name="Q7" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL-SOIC8" device="SOIC8"/>
+=======
+<part name="D3" library="pandasat" deviceset="RBR5LAM60ATF" device=""/>
+<part name="Q5" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL-SOIC8" device="SOIC8"/>
+<part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL-SOIC8" device="SOIC8"/>
+<part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL-SOIC8" device="SOIC8"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <part name="TP1" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP2" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP3" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
@@ -18065,6 +18077,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C41" library="microbuilder" deviceset="CAP_CERAMIC" device="1206"/>
 <part name="C42" library="microbuilder" deviceset="CAP_CERAMIC" device="1206"/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<<<<<<< HEAD
 <part name="J12" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
 <part name="J6" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
 <part name="J8" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
@@ -18078,6 +18091,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="X1" library="adafruit" deviceset="XTAL-4" device="-3225"/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R35" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:26063/1" value="0.025"/>
+=======
+<part name="JP21" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP20" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP13" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP15" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP22" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP23" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP24" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="JP25" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
+<part name="D1" library="pandasat" deviceset="RBR5LAM60ATF" device=""/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 </parts>
 <sheets>
 <sheet>
@@ -19834,9 +19858,15 @@ Ichrg=988*Vprog/Rprog
 <net name="N$12" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
+<<<<<<< HEAD
 <pinref part="Q2" gate="A" pin="D"/>
 <pinref part="Q5" gate="G$1" pin="G"/>
 <wire x1="195.58" y1="53.26" x2="195.58" y2="53.52" width="0.1524" layer="91"/>
+=======
+<pinref part="Q15" gate="A" pin="D"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="195.58" y1="53.34" x2="195.58" y2="53.52" width="0.1524" layer="91"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="195.58" y1="53.52" x2="207.03" y2="53.46" width="0.1524" layer="91"/>
 <junction x="195.58" y="53.26"/>
 <wire x1="195.58" y1="53.26" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
@@ -20407,7 +20437,11 @@ Connection</text>
 <instance part="GND47" gate="1" x="20.574" y="58.928" smashed="yes">
 <attribute name="VALUE" x="18.034" y="56.388" size="1.778" layer="96"/>
 </instance>
+<<<<<<< HEAD
 <instance part="D2" gate="G$1" x="162.56" y="167.64" smashed="yes"/>
+=======
+<instance part="D3" gate="G$1" x="162.56" y="167.64" smashed="yes"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <instance part="TP1" gate="G$1" x="84.77" y="44.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="77.15" y="41.5" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.055" y="41.5" size="1.27" layer="95" rot="R90"/>
@@ -21339,11 +21373,19 @@ Connection</text>
 <attribute name="VALUE" x="198.374" y="61.595" size="1.778" layer="96"/>
 <attribute name="VOLTAGE" x="196.85" y="63.754" size="1.778" layer="96" display="off"/>
 </instance>
+<<<<<<< HEAD
 <instance part="Q6" gate="G$1" x="189.68" y="160.72" smashed="yes">
 <attribute name="NAME" x="182.06" y="166.308" size="1.778" layer="95"/>
 <attribute name="VALUE" x="181.77" y="149.87" size="1.778" layer="96"/>
 </instance>
 <instance part="Q7" gate="G$1" x="189.77" y="138.69" smashed="yes">
+=======
+<instance part="Q3" gate="G$1" x="189.68" y="160.72" smashed="yes">
+<attribute name="NAME" x="182.06" y="166.308" size="1.778" layer="95"/>
+<attribute name="VALUE" x="181.77" y="149.87" size="1.778" layer="96"/>
+</instance>
+<instance part="Q4" gate="G$1" x="189.77" y="138.69" smashed="yes">
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <attribute name="NAME" x="182.15" y="144.278" size="1.778" layer="95"/>
 <attribute name="VALUE" x="181.86" y="127.84" size="1.778" layer="96"/>
 </instance>
@@ -21503,7 +21545,11 @@ Connection</text>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="Q3" gate="A" pin="D"/>
 <wire x1="169.164" y1="156.972" x2="169.164" y2="154.432" width="0.1524" layer="91"/>
+<<<<<<< HEAD
 <pinref part="Q6" gate="G$1" pin="G"/>
+=======
+<pinref part="Q3" gate="G$1" pin="G"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="169.164" y1="154.432" x2="179.52" y2="154.432" width="0.1524" layer="91"/>
 <wire x1="179.52" y1="154.432" x2="179.52" y2="155.64" width="0.1524" layer="91"/>
 <junction x="169.164" y="154.432"/>
@@ -21535,20 +21581,34 @@ Connection</text>
 <wire x1="123.444" y1="167.132" x2="123.444" y2="146.812" width="0.1524" layer="91"/>
 <wire x1="103.124" y1="167.132" x2="123.444" y2="167.132" width="0.1524" layer="91"/>
 <junction x="123.444" y="167.132"/>
+<<<<<<< HEAD
 <pinref part="Q6" gate="G$1" pin="S@3"/>
 <pinref part="Q6" gate="G$1" pin="S@2"/>
 <wire x1="179.52" y1="158.18" x2="179.52" y2="160.72" width="0.1524" layer="91"/>
 <pinref part="Q6" gate="G$1" pin="S@1"/>
+=======
+<pinref part="Q3" gate="G$1" pin="S@3"/>
+<pinref part="Q3" gate="G$1" pin="S@2"/>
+<wire x1="179.52" y1="158.18" x2="179.52" y2="160.72" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="S@1"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="179.52" y1="160.72" x2="179.52" y2="163.26" width="0.1524" layer="91"/>
 <junction x="179.52" y="160.72"/>
 <wire x1="179.52" y1="163.26" x2="179.52" y2="167.152" width="0.1524" layer="91"/>
 <wire x1="179.52" y1="167.152" x2="169.164" y2="167.132" width="0.1524" layer="91"/>
 <junction x="179.52" y="163.26"/>
 <junction x="169.164" y="167.132"/>
+<<<<<<< HEAD
 <pinref part="Q7" gate="G$1" pin="S@3"/>
 <pinref part="Q7" gate="G$1" pin="S@2"/>
 <wire x1="179.61" y1="136.15" x2="179.61" y2="138.69" width="0.1524" layer="91"/>
 <pinref part="Q7" gate="G$1" pin="S@1"/>
+=======
+<pinref part="Q4" gate="G$1" pin="S@3"/>
+<pinref part="Q4" gate="G$1" pin="S@2"/>
+<wire x1="179.61" y1="136.15" x2="179.61" y2="138.69" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="S@1"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="179.61" y1="138.69" x2="179.61" y2="141.23" width="0.1524" layer="91"/>
 <junction x="179.61" y="138.69"/>
 <wire x1="179.61" y1="141.23" x2="179.6" y2="146.852" width="0.1524" layer="91"/>
@@ -21569,7 +21629,11 @@ Connection</text>
 <net name="N$35" class="0">
 <segment>
 <pinref part="K4" gate="A" pin="A2"/>
+<<<<<<< HEAD
 <pinref part="Q8" gate="G$1" pin="C"/>
+=======
+<pinref part="Q17" gate="G$1" pin="C"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="57.404" y1="159.512" x2="62.484" y2="159.512" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <junction x="57.404" y="159.512"/>
@@ -21722,6 +21786,7 @@ Connection</text>
 </net>
 <net name="VBURN1" class="0">
 <segment>
+<<<<<<< HEAD
 <pinref part="Q6" gate="G$1" pin="D@1"/>
 <pinref part="Q6" gate="G$1" pin="D@2"/>
 <wire x1="197.3" y1="155.64" x2="197.3" y2="158.18" width="0.1524" layer="91"/>
@@ -21729,6 +21794,15 @@ Connection</text>
 <wire x1="197.3" y1="158.18" x2="197.3" y2="160.72" width="0.1524" layer="91"/>
 <junction x="197.3" y="158.18"/>
 <pinref part="Q6" gate="G$1" pin="D@4"/>
+=======
+<pinref part="Q3" gate="G$1" pin="D@1"/>
+<pinref part="Q3" gate="G$1" pin="D@2"/>
+<wire x1="197.3" y1="155.64" x2="197.3" y2="158.18" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="D@3"/>
+<wire x1="197.3" y1="158.18" x2="197.3" y2="160.72" width="0.1524" layer="91"/>
+<junction x="197.3" y="158.18"/>
+<pinref part="Q3" gate="G$1" pin="D@4"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="197.3" y1="160.72" x2="197.3" y2="163.26" width="0.1524" layer="91"/>
 <junction x="197.3" y="160.72"/>
 <wire x1="197.3" y1="163.26" x2="197.84" y2="163.26" width="0.1524" layer="91"/>
@@ -21744,7 +21818,11 @@ Connection</text>
 <pinref part="Q4" gate="A" pin="D"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="169.164" y1="136.652" x2="169.164" y2="134.112" width="0.1524" layer="91"/>
+<<<<<<< HEAD
 <pinref part="Q7" gate="G$1" pin="G"/>
+=======
+<pinref part="Q4" gate="G$1" pin="G"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="179.61" y1="133.61" x2="169.164" y2="133.61" width="0.1524" layer="91"/>
 <wire x1="169.164" y1="133.61" x2="169.164" y2="134.112" width="0.1524" layer="91"/>
 <junction x="169.164" y="134.112"/>
@@ -21752,6 +21830,7 @@ Connection</text>
 </net>
 <net name="VBURN2" class="0">
 <segment>
+<<<<<<< HEAD
 <pinref part="Q7" gate="G$1" pin="D@1"/>
 <pinref part="Q7" gate="G$1" pin="D@2"/>
 <wire x1="197.39" y1="133.61" x2="197.39" y2="136.15" width="0.1524" layer="91"/>
@@ -21759,6 +21838,15 @@ Connection</text>
 <wire x1="197.39" y1="138.69" x2="197.39" y2="136.15" width="0.1524" layer="91"/>
 <junction x="197.39" y="136.15"/>
 <pinref part="Q7" gate="G$1" pin="D@4"/>
+=======
+<pinref part="Q4" gate="G$1" pin="D@1"/>
+<pinref part="Q4" gate="G$1" pin="D@2"/>
+<wire x1="197.39" y1="133.61" x2="197.39" y2="136.15" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="D@3"/>
+<wire x1="197.39" y1="138.69" x2="197.39" y2="136.15" width="0.1524" layer="91"/>
+<junction x="197.39" y="136.15"/>
+<pinref part="Q4" gate="G$1" pin="D@4"/>
+>>>>>>> e03284884501091ed8ae388459821c96c98bb10c
 <wire x1="197.39" y1="141.23" x2="197.39" y2="138.69" width="0.1524" layer="91"/>
 <junction x="197.39" y="138.69"/>
 <wire x1="197.39" y1="141.23" x2="199.55" y2="141.23" width="0.1524" layer="91"/>
