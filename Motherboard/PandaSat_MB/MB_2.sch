@@ -16843,6 +16843,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="L1" library="pandasat" deviceset="CM322522" device="" value="56uH"/>
 <part name="L2" library="pandasat" deviceset="CM322522" device="" value="10uH"/>
 <part name="L3" library="pandasat" deviceset="CM322522" device="" value="3.3uH"/>
+<part name="J17" library="10118194-0001LF" deviceset="10118194-0001LF" device=""/>
+<part name="J18" library="SparkFun-Connectors" deviceset="M03X2" device="2X3_SILK_SM"/>
 </parts>
 <sheets>
 <sheet>
@@ -19079,6 +19081,7 @@ Connection</text>
 <text x="21.86" y="29.94" size="2.54" layer="97" align="top-left">Payload Connector</text>
 <text x="101.6" y="132.334" size="1.778" layer="97">Batteries in 2s2p config</text>
 <text x="87.152" y="53.32" size="2.54" layer="97" align="top-left">Test Points</text>
+<text x="183.692" y="47.32" size="2.54" layer="97" align="top-left">Payload USB Bypass</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="35.56" y="157.48" smashed="yes" rot="MR0">
@@ -19297,6 +19300,14 @@ Connection</text>
 <attribute name="VALUE" x="30.378" y="7.98" size="1.27" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="206.63" y="152.28" smashed="yes" rot="R270"/>
+<instance part="J17" gate="G$1" x="183.014" y="30.126" smashed="yes" rot="R180">
+<attribute name="NAME" x="190.395259375" y="24.52641875" size="1.27263125" layer="95" rot="R180"/>
+<attribute name="VALUE" x="190.65081875" y="37.76281875" size="1.272809375" layer="96" rot="R180"/>
+</instance>
+<instance part="J18" gate="G$1" x="208.342" y="30.438" smashed="yes" rot="R180">
+<attribute name="NAME" x="213.422" y="24.85" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.422" y="37.55" size="1.27" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -19977,6 +19988,41 @@ Connection</text>
 <pinref part="D1" gate="G$1" pin="2"/>
 <wire x1="213.106" y1="167.894" x2="206.63" y2="167.894" width="0.1524" layer="91"/>
 <wire x1="206.63" y1="167.894" x2="206.63" y2="164.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="J17" gate="G$1" pin="D+"/>
+<pinref part="J18" gate="G$1" pin="2"/>
+<wire x1="195.714" y1="27.586" x2="200.722" y2="27.586" width="0.1524" layer="91"/>
+<wire x1="200.722" y1="27.586" x2="200.722" y2="27.898" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="J17" gate="G$1" pin="D-"/>
+<pinref part="J18" gate="G$1" pin="4"/>
+<wire x1="195.714" y1="30.126" x2="200.722" y2="30.126" width="0.1524" layer="91"/>
+<wire x1="200.722" y1="30.126" x2="200.722" y2="30.438" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="J17" gate="G$1" pin="VDD"/>
+<wire x1="170.314" y1="27.586" x2="170.314" y2="20.18" width="0.1524" layer="91"/>
+<wire x1="170.314" y1="20.18" x2="215.962" y2="20.18" width="0.1524" layer="91"/>
+<pinref part="J18" gate="G$1" pin="1"/>
+<wire x1="215.962" y1="20.18" x2="215.962" y2="27.898" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="J17" gate="G$1" pin="GND"/>
+<wire x1="170.314" y1="32.666" x2="170.314" y2="39.43" width="0.1524" layer="91"/>
+<wire x1="170.314" y1="39.43" x2="215.99" y2="39.43" width="0.1524" layer="91"/>
+<pinref part="J18" gate="G$1" pin="5"/>
+<wire x1="215.99" y1="39.43" x2="215.99" y2="32.978" width="0.1524" layer="91"/>
+<wire x1="215.99" y1="32.978" x2="215.962" y2="32.978" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

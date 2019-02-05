@@ -13670,7 +13670,7 @@ chip</description>
 <wire x1="1.25" y1="-1.35" x2="1.25" y2="1.35" width="0.1524" layer="51"/>
 <wire x1="1.25" y1="1.35" x2="-1.25" y2="1.35" width="0.1524" layer="51"/>
 </package>
-<package name="LQH43PH">
+<package name="1210">
 <smd name="2" x="1.5" y="-0.005" dx="1.25" dy="2.25" layer="1"/>
 <smd name="1" x="-1.54" y="0" dx="1.25" dy="2.25" layer="1"/>
 <text x="-3.6" y="2" size="1" layer="25">&gt;NAME</text>
@@ -14015,12 +14015,12 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LQH43PH" prefix="L">
+<deviceset name="CM322522" prefix="L">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="7.62" y="0"/>
 </gates>
 <devices>
-<device name="" package="LQH43PH">
+<device name="" package="1210">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
@@ -16840,9 +16840,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C31" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="1uF"/>
 <part name="C30" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="JP6" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
-<part name="L1" library="pandasat" deviceset="LQH43PH" device="" value="56uH"/>
-<part name="L2" library="pandasat" deviceset="LQH43PH" device="" value="10uH"/>
-<part name="L3" library="pandasat" deviceset="LQH43PH" device="" value="3.3uH"/>
+<part name="L1" library="pandasat" deviceset="CM322522" device="" value="56uH"/>
+<part name="L2" library="pandasat" deviceset="CM322522" device="" value="10uH"/>
+<part name="L3" library="pandasat" deviceset="CM322522" device="" value="3.3uH"/>
 </parts>
 <sheets>
 <sheet>

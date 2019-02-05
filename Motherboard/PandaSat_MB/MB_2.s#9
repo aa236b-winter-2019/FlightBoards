@@ -19231,7 +19231,7 @@ Ichrg=988*Vprog/Rprog
 <attribute name="VALUE" x="48.26" y="5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="P+1" gate="G$1" x="12.7" y="40.64" smashed="yes">
-<attribute name="VALUE" x="17.78" y="43.942" size="1.778" layer="96"/>
+<attribute name="VALUE" x="12.88" y="43.912" size="1.778" layer="96"/>
 </instance>
 <instance part="R17" gate="G$1" x="137.16" y="27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="138.6586" y="31.75" size="1.778" layer="95" rot="R270"/>
@@ -19874,7 +19874,7 @@ Ichrg=988*Vprog/Rprog
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="20.54" y1="59.3" x2="20.54" y2="62.37" width="0.1524" layer="91"/>
 <wire x1="20.54" y1="62.37" x2="17.95" y2="62.37" width="0.1524" layer="91"/>
-<label x="17.62" y="64.39" size="1.778" layer="95" rot="R180"/>
+<label x="17.86" y="62.36" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="20.54" y1="59.3" x2="26.41" y2="59.3" width="0.1524" layer="91"/>
 <wire x1="26.41" y1="59.3" x2="26.41" y2="53.09" width="0.1524" layer="91"/>
 <junction x="20.54" y="59.3"/>
@@ -20283,6 +20283,7 @@ Ichrg=988*Vprog/Rprog
 <junction x="28.956" y="50.546"/>
 <wire x1="23.93" y1="49.1" x2="20.54" y2="49.1" width="0.1524" layer="91"/>
 <wire x1="20.54" y1="49.1" x2="20.54" y2="49.14" width="0.1524" layer="91"/>
+<pinref part="R35" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="5V_EN" class="0">
