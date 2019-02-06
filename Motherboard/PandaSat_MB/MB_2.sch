@@ -16772,7 +16772,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.1524" drill="0.381">
+<class number="0" name="default" width="0.1524" drill="0.3">
 <clearance class="0" value="0.127"/>
 </class>
 <class number="1" name="diff pairs" width="0.2032" drill="0">

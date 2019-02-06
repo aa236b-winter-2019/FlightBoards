@@ -18017,11 +18017,11 @@ Validate SPI pinout of SAMD21</text>
 <label x="126" y="134" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PL_PWR_EN" class="0">
+<net name="PL_PWR_ENAB" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PB01"/>
 <wire x1="135" y1="132" x2="126" y2="132" width="0.1524" layer="91"/>
-<label x="120" y="132" size="1.778" layer="95"/>
+<label x="116.698" y="132" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PL_ENABLE" class="0">

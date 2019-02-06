@@ -17987,14 +17987,14 @@ Validate SPI pinout of SAMD21</text>
 <label x="182" y="108" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DZ_FAULT" class="0">
+<net name="DY_FAULT" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PB31"/>
 <wire x1="135" y1="92" x2="122" y2="92" width="0.1524" layer="91"/>
 <label x="121" y="92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DXY_FAULT" class="0">
+<net name="DXZ_FAULT" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PB30"/>
 <wire x1="135" y1="94" x2="122" y2="94" width="0.1524" layer="91"/>
@@ -18029,14 +18029,14 @@ Validate SPI pinout of SAMD21</text>
 <label x="121" y="130" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MXY_EN" class="0">
+<net name="MXZ_EN" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PB05"/>
 <wire x1="135" y1="124" x2="126" y2="124" width="0.1524" layer="91"/>
 <label x="125" y="124" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MZ_EN" class="0">
+<net name="MY_EN" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PB06"/>
 <wire x1="135" y1="122" x2="126" y2="122" width="0.1524" layer="91"/>
@@ -20550,7 +20550,7 @@ Connection</text>
 <junction x="57.404" y="159.512"/>
 </segment>
 </net>
-<net name="DXY_FAULT" class="0">
+<net name="DXZ_FAULT" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="NFAULT"/>
 <wire x1="33.528" y1="68.834" x2="27.432" y2="68.834" width="0.1524" layer="91"/>
@@ -20571,7 +20571,7 @@ Connection</text>
 <label x="28.956" y="94.234" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MXY_EN" class="0">
+<net name="MXZ_EN" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="NSLEEP"/>
 <wire x1="33.528" y1="78.994" x2="29.21" y2="78.994" width="0.1524" layer="91"/>
@@ -20606,14 +20606,14 @@ Connection</text>
 <label x="70.866" y="84.074" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MZ_EN" class="0">
+<net name="MY_EN" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="NSLEEP"/>
 <wire x1="154.94" y1="79.756" x2="150.622" y2="79.756" width="0.1524" layer="91"/>
 <label x="150.622" y="79.756" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="DZ_FAULT" class="0">
+<net name="DY_FAULT" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="NFAULT"/>
 <wire x1="154.94" y1="69.596" x2="148.844" y2="69.596" width="0.1524" layer="91"/>
