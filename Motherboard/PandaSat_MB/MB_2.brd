@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2977,6 +2977,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DESCRIPTION" value=" 1.10mm Pitch microSD Memory Card Connector, Normal Mount Surface Mount, Push-Push Type, 1.45mm Height, Anti-card fly-out " x="99.317" y="105.9348" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="WM12834CT-ND" x="99.317" y="105.9348" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/molex-llc/5031821852/WM12834CT-ND/5823232?WT.z_cid=ref_snapeda&amp;utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=buynow" x="99.317" y="105.9348" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="1.15" x="-8.633" y="72.9148" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Molex" x="99.317" y="105.9348" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="5031821852" x="99.317" y="105.9348" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="0.64" y="66.287540625" size="1.27431875" layer="25" rot="R180"/>
@@ -2985,6 +2986,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="J2" library="10118194-0001LF" package="FRAMATOME_10118194-0001LF" value="10118194-0001LF" x="-61.3102" y="2.4448" smashed="yes">
 <attribute name="AVAILABILITY" value="Warning" x="56.7998" y="-1.3652" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" Micro Usb, 2.0 Type b, Rcpt, Smt " x="56.7998" y="-1.3652" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="3" x="-61.3102" y="2.4448" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Amphenol" x="56.7998" y="-1.3652" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="10118194-0001LF" x="56.7998" y="-1.3652" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-57.222659375" y="7.8631" size="1.27218125" layer="25" rot="R180"/>
@@ -2992,6 +2994,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PRICE" value="0.26 USD" x="56.7998" y="-1.3652" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J5" library="pandasat" package="BK-18650" value="BK-18650" x="-47.7552" y="50.3604" smashed="yes" rot="MR90">
+<attribute name="HEIGHT" value="21.54" x="-47.7552" y="50.3604" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-8.0552" y="11.2604" size="0.6096" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="-7.6758" y="87.6384" size="0.6096" layer="28" rot="MR90"/>
 </element>
@@ -3358,6 +3361,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PROD_ID" value="IC-12536" x="98.122" y="167.3622" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="K4" library="maholli" package="RELAY5-PE_CO" value="PE014006" x="-68.214" y="10.16" smashed="yes" rot="R90">
+<attribute name="HEIGHT" value="10" x="-68.214" y="10.16" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="PE014005" x="-65.674" y="105.41" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-89.6966" y="3.5796" size="1.27" layer="25" ratio="6" rot="SR0"/>
 <attribute name="VENDOR" value="TE Connectivity" x="-65.674" y="105.41" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3382,6 +3386,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="-47.8196" y="63.4014" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="J4" library="con-coax" library_urn="urn:adsk.eagle:library:133" package="BU-SMA-V" package3d_urn="urn:adsk.eagle:package:6211/1" value="BU-SMA-V" x="-36.0686" y="6.1284" smashed="yes">
+<attribute name="HEIGHT" value="9.53" x="-36.0686" y="6.1284" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="26.1614" y="-100.5516" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="26.1614" y="-100.5516" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-31.4966" y="2.9534" size="1.27" layer="25"/>
@@ -3453,6 +3458,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="J17" library="10118194-0001LF" package="FRAMATOME_10118194-0001LF" value="10118194-0001LF" x="-46.3042" y="87.7316" smashed="yes" rot="R180">
 <attribute name="AVAILABILITY" value="Warning" x="-46.3042" y="87.7316" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DESCRIPTION" value=" Micro Usb, 2.0 Type b, Rcpt, Smt " x="-46.3042" y="87.7316" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="3" x="-46.3042" y="87.7316" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Amphenol" x="-46.3042" y="87.7316" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="10118194-0001LF" x="-46.3042" y="87.7316" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-41.7965" y="88.633140625" size="1.27218125" layer="25" rot="R270"/>
@@ -3460,48 +3466,59 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PRICE" value="0.26 USD" x="-46.3042" y="87.7316" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="-52.213340625" y="87.631446875" size="1.271959375" layer="27" rot="R270"/>
 </element>
-<element name="J3" library="pandasat" package="BARRELJACK_5.0MMX2.1MM_SMD" value="PJ-036AH-SMT-TRSMD" x="-48.7426" y="4.0386" smashed="yes" rot="R90"/>
+<element name="J3" library="pandasat" package="BARRELJACK_5.0MMX2.1MM_SMD" value="PJ-036AH-SMT-TRSMD" x="-48.7426" y="4.0386" smashed="yes" rot="R90">
+<attribute name="HEIGHT" value="11" x="-48.7426" y="4.0386" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="J12" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-27.0256" y="4.8006" smashed="yes">
+<attribute name="HEIGHT" value="8.64" x="-27.0256" y="4.8006" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-29.7956" y="9.8646" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-27.0256" y="4.8006" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-26.5456" y="9.8876" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J13" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-3.6576" y="15.9004" smashed="yes" rot="R90">
+<attribute name="HEIGHT" value="8.64" x="-3.6576" y="15.9004" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-8.874" y="13.1304" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-3.6576" y="15.9004" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-8.7446" y="16.3804" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="J6" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-92.2782" y="60.2234" smashed="yes" rot="R270">
+<attribute name="HEIGHT" value="8.64" x="-92.2782" y="60.2234" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-87.2904" y="62.5108" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-92.2782" y="60.2234" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-87.1912" y="59.7434" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J7" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-92.3544" y="47.2948" smashed="yes" rot="R270">
+<attribute name="HEIGHT" value="8.64" x="-92.3544" y="47.2948" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-86.884" y="45.5182" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-92.3544" y="47.2948" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-87.2674" y="46.8148" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J8" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-3.7846" y="55.372" smashed="yes" rot="R90">
+<attribute name="HEIGHT" value="8.64" x="-3.7846" y="55.372" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-8.8486" y="52.602" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-3.7846" y="55.372" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-8.8716" y="55.852" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="J9" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-3.7592" y="42.3926" smashed="yes" rot="R90">
+<attribute name="HEIGHT" value="8.64" x="-3.7592" y="42.3926" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-8.8232" y="39.6226" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-3.7592" y="42.3926" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-8.8462" y="42.8726" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="J10" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-92.4306" y="34.4424" smashed="yes" rot="R270">
+<attribute name="HEIGHT" value="8.64" x="-92.4306" y="34.4424" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-87.3666" y="37.2124" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-92.4306" y="34.4424" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-87.3436" y="33.9624" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J11" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-92.6338" y="21.463" smashed="yes" rot="R270">
+<attribute name="HEIGHT" value="8.64" x="-92.6338" y="21.463" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-87.5698" y="24.233" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-92.6338" y="21.463" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-87.5468" y="20.983" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J18" library="pandasat" package="2X3" package3d_urn="urn:adsk.eagle:package:38016/1" value="" x="-3.7846" y="29.1084" smashed="yes" rot="R90">
+<attribute name="HEIGHT" value="8.64" x="-3.7846" y="29.1084" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-8.8486" y="26.3384" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-09701" x="-3.7846" y="29.1084" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-8.8716" y="29.5884" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
