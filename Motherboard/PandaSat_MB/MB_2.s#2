@@ -17051,7 +17051,7 @@ Validate SPI pinout of SAMD21</text>
 <attribute name="VALUE" x="112.506" y="134.259" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="JP6" gate="A" x="70.89" y="162.69" smashed="yes">
-<attribute name="NAME" x="69.62" y="162.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="70.62" y="166.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="76.605" y="162.69" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="L2" gate="G$1" x="133.73" y="137.92" smashed="yes">

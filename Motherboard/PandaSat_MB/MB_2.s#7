@@ -16796,8 +16796,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP5" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP6" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP7" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
-<part name="TP8" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
-<part name="TP9" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP10" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP11" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
 <part name="TP12" library="microbuilder" deviceset="TESTPOINT" device="ROUND1MM"/>
@@ -19128,14 +19126,6 @@ Connection</text>
 <attribute name="NAME" x="76.74" y="18.66" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="78.645" y="18.66" size="1.27" layer="95" rot="R90"/>
 </instance>
-<instance part="TP8" gate="G$1" x="84.28" y="17.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.66" y="15.14" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="78.565" y="15.14" size="1.27" layer="95" rot="R90"/>
-</instance>
-<instance part="TP9" gate="G$1" x="84.28" y="13.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.66" y="10.64" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="78.565" y="10.64" size="1.27" layer="95" rot="R90"/>
-</instance>
 <instance part="TP10" gate="G$1" x="84.19" y="9" smashed="yes" rot="R90">
 <attribute name="NAME" x="76.57" y="6.46" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="78.475" y="6.46" size="1.27" layer="95" rot="R90"/>
@@ -19504,12 +19494,6 @@ Connection</text>
 <label x="86.5" y="33" size="0.8" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U12" gate="G$1" pin="SO"/>
-<wire x1="18" y1="106.46" x2="15.5" y2="106.46" width="0.1524" layer="91"/>
-<wire x1="15.5" y1="106.46" x2="15.5" y2="106.5" width="0.1524" layer="91"/>
-<label x="15.5" y="106.5" size="1.2" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U12" gate="G$1" pin="SI"/>
 <wire x1="48.48" y1="101.38" x2="50.5" y2="101.38" width="0.1524" layer="91"/>
 <wire x1="50.5" y1="101.38" x2="50.5" y2="101.5" width="0.1524" layer="91"/>
@@ -19527,6 +19511,12 @@ Connection</text>
 <wire x1="84.52" y1="36.67" x2="86.53" y2="36.67" width="0.1524" layer="91"/>
 <wire x1="86.53" y1="36.67" x2="86.53" y2="36.7" width="0.1524" layer="91"/>
 <label x="86.5" y="37" size="0.8" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U12" gate="G$1" pin="SO"/>
+<wire x1="18" y1="106.46" x2="15.5" y2="106.46" width="0.1524" layer="91"/>
+<wire x1="15.5" y1="106.46" x2="15.5" y2="106.5" width="0.1524" layer="91"/>
+<label x="15" y="106.5" size="1.2" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_SCK" class="0">
@@ -19758,22 +19748,6 @@ Connection</text>
 <pinref part="J11" gate="G$1" pin="2"/>
 <wire x1="216.408" y1="66.548" x2="218.948" y2="66.548" width="0.1524" layer="91"/>
 <label x="218.948" y="66.548" size="1.143" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="QSPI_SCK" class="0">
-<segment>
-<pinref part="TP8" gate="G$1" pin="P$1"/>
-<wire x1="84.28" y1="17.68" x2="84.28" y2="17.5" width="0.1524" layer="91"/>
-<wire x1="84.28" y1="17.5" x2="86.5" y2="17.5" width="0.1524" layer="91"/>
-<label x="86.5" y="17.5" size="0.8" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="QSPI_DATA[0]" class="0">
-<segment>
-<pinref part="TP9" gate="G$1" pin="P$1"/>
-<wire x1="84.28" y1="13.18" x2="84.28" y2="13" width="0.1524" layer="91"/>
-<wire x1="84.28" y1="13" x2="87" y2="13" width="0.1524" layer="91"/>
-<label x="87" y="13" size="0.8" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VBURN1" class="0">
