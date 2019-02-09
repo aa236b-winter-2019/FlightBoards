@@ -306,6 +306,56 @@
 <wire x1="-1.45" y1="-1.4" x2="1.45" y2="-1.4" width="0.1524" layer="51"/>
 <wire x1="-1.45" y1="1.4" x2="1.45" y2="1.4" width="0.1524" layer="51"/>
 </package>
+<package name="USB-CSMD">
+<smd name="A1" x="-2.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A2" x="-2.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A3" x="-1.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A4" x="-1.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A5" x="-0.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A6" x="-0.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A7" x="0.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A8" x="0.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A9" x="1.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A10" x="1.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A11" x="2.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="A12" x="2.75" y="0.65" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B7" x="0" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B8" x="0.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B9" x="1" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B10" x="1.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B11" x="2" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B12" x="2.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B6" x="-0.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B5" x="-1" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B4" x="-1.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B3" x="-2" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B2" x="-2.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="B1" x="-3" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<pad name="SHELL3" x="-4.49" y="-7.2" drill="1.1"/>
+<pad name="SHELL4" x="4.49" y="-7.2" drill="1.1"/>
+<pad name="SHELL1" x="-4.13" y="-1.25" drill="1.1" diameter="1.3" rot="R90"/>
+<pad name="SHELL2" x="4.13" y="-1.25" drill="1.1" diameter="1.3" rot="R90"/>
+<hole x="-3.6" y="0" drill="0.65"/>
+<hole x="3.6" y="0" drill="0.95"/>
+<wire x1="-4.6" y1="1.3" x2="4.6" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="4.6" y1="1.3" x2="4.6" y2="-0.54" width="0.1524" layer="21"/>
+<wire x1="4.6" y1="-2" x2="4.6" y2="-6.1" width="0.1524" layer="21"/>
+<wire x1="4.6" y1="-8.2" x2="4.6" y2="-9.2" width="0.1524" layer="21"/>
+<wire x1="4.6" y1="-9.2" x2="-4.6" y2="-9.2" width="0.1524" layer="21"/>
+<wire x1="-4.6" y1="-9.2" x2="-4.6" y2="-8.2" width="0.1524" layer="21"/>
+<wire x1="-4.6" y1="-6.2" x2="-4.6" y2="-1.9" width="0.1524" layer="21"/>
+<wire x1="-4.6" y1="1.3" x2="-4.6" y2="-0.6" width="0.1524" layer="21"/>
+<wire x1="-4.6" y1="-8.2" x2="-4.6" y2="-9.2" width="0.1524" layer="51"/>
+<wire x1="-4.6" y1="-9.2" x2="4.6" y2="-9.2" width="0.1524" layer="51"/>
+<wire x1="4.6" y1="-9.2" x2="4.6" y2="-8.2" width="0.1524" layer="51"/>
+<wire x1="4.6" y1="-6.1" x2="4.6" y2="-2" width="0.1524" layer="51"/>
+<wire x1="4.6" y1="-0.55" x2="4.6" y2="1.3" width="0.1524" layer="51"/>
+<wire x1="4.6" y1="1.3" x2="-4.6" y2="1.3" width="0.1524" layer="51"/>
+<wire x1="-4.6" y1="1.3" x2="-4.6" y2="-0.6" width="0.1524" layer="51"/>
+<wire x1="-4.6" y1="-1.9" x2="-4.6" y2="-6.2" width="0.1524" layer="51"/>
+<text x="-4.4" y="1.87" size="1" layer="25">&gt;NAME</text>
+<text x="0.91" y="1.96" size="1" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATSAMD51">
@@ -507,38 +557,40 @@
 <text x="-12.7" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="USB-C">
-<pin name="P$1" x="-4" y="5" length="middle" rot="R90"/>
-<pin name="P$2" x="-2.5" y="5" length="middle" rot="R90"/>
-<pin name="P$3" x="-1" y="5" length="middle" rot="R90"/>
-<pin name="P$4" x="0.5" y="5" length="middle" rot="R90"/>
-<pin name="P$5" x="2" y="5" length="middle" rot="R90"/>
-<pin name="P$6" x="3.5" y="5" length="middle" rot="R90"/>
-<pin name="P$7" x="5" y="5" length="middle" rot="R90"/>
-<pin name="P$8" x="6.5" y="5" length="middle" rot="R90"/>
-<pin name="P$9" x="8" y="5" length="middle" rot="R90"/>
-<pin name="P$10" x="9.5" y="5" length="middle" rot="R90"/>
-<pin name="P$11" x="11" y="5" length="middle" rot="R90"/>
-<pin name="P$12" x="12.5" y="5" length="middle" rot="R90"/>
-<pin name="P$13" x="-4" y="-3" length="middle" rot="R270"/>
-<pin name="P$14" x="-2.5" y="-3" length="middle" rot="R270"/>
-<pin name="P$15" x="-1" y="-3" length="middle" rot="R270"/>
-<pin name="P$16" x="0.5" y="-3" length="middle" rot="R270"/>
-<pin name="P$17" x="2" y="-3" length="middle" rot="R270"/>
-<pin name="P$18" x="3.5" y="-3" length="middle" rot="R270"/>
-<pin name="P$19" x="5" y="-3" length="middle" rot="R270"/>
-<pin name="P$20" x="6.5" y="-3" length="middle" rot="R270"/>
-<pin name="P$21" x="8" y="-3" length="middle" rot="R270"/>
-<pin name="P$22" x="9.5" y="-3" length="middle" rot="R270"/>
-<pin name="P$23" x="11" y="-3" length="middle" rot="R270"/>
-<pin name="P$24" x="12.5" y="-3" length="middle" rot="R270"/>
-<wire x1="-6" y1="5" x2="-6" y2="-3" width="0.1524" layer="94"/>
-<wire x1="-6" y1="-3" x2="14" y2="-3" width="0.1524" layer="94"/>
-<wire x1="14" y1="-3" x2="14" y2="5" width="0.1524" layer="94"/>
-<wire x1="14" y1="5" x2="-6" y2="5" width="0.1524" layer="94"/>
-<pin name="P$25" x="14" y="2" length="middle"/>
-<pin name="P$26" x="14" y="0.5" length="middle"/>
-<text x="-13.5" y="6" size="1.778" layer="95">&gt;NAME</text>
-<text x="13.5" y="-7" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="GND" x="-8" y="-14.5" length="middle" rot="R90"/>
+<pin name="TX1+" x="-6.5" y="-14.5" length="middle" rot="R90"/>
+<pin name="TX1-" x="-5" y="-14.5" length="middle" rot="R90"/>
+<pin name="VBUS" x="-3.5" y="-14.5" length="middle" rot="R90"/>
+<pin name="CC1" x="-2" y="-14.5" length="middle" rot="R90"/>
+<pin name="D+" x="-0.5" y="-14.5" length="middle" rot="R90"/>
+<pin name="D-" x="1" y="-14.5" length="middle" rot="R90"/>
+<pin name="SBU1" x="2.5" y="-14.5" length="middle" rot="R90"/>
+<pin name="VBUS2" x="4" y="-14.5" length="middle" rot="R90"/>
+<pin name="RX2-" x="5.5" y="-14.5" length="middle" rot="R90"/>
+<pin name="RX2+" x="7" y="-14.5" length="middle" rot="R90"/>
+<pin name="GND1" x="8.5" y="-14.5" length="middle" rot="R90"/>
+<pin name="GND4" x="-8" y="14" length="middle" rot="R270"/>
+<pin name="RX1+" x="-6.5" y="14" length="middle" rot="R270"/>
+<pin name="RX1-" x="-5" y="14" length="middle" rot="R270"/>
+<pin name="VBUS4" x="-3.5" y="14" length="middle" rot="R270"/>
+<pin name="SBU2" x="-2" y="14" length="middle" rot="R270"/>
+<pin name="D2-" x="-0.5" y="14" length="middle" rot="R270"/>
+<pin name="D2+" x="1" y="14" length="middle" rot="R270"/>
+<pin name="CC2" x="2.5" y="14" length="middle" rot="R270"/>
+<pin name="VBUS3" x="4" y="14" length="middle" rot="R270"/>
+<pin name="TX2-" x="5.5" y="14" length="middle" rot="R270"/>
+<pin name="TX2+" x="7" y="14" length="middle" rot="R270"/>
+<pin name="GND2" x="8.5" y="14" length="middle" rot="R270"/>
+<pin name="SHELL1" x="25.5" y="1" length="middle" rot="R180"/>
+<pin name="SHELL2" x="25.5" y="-1.5" length="middle" rot="R180"/>
+<text x="-19" y="10" size="1.778" layer="95">&gt;NAME</text>
+<text x="10.5" y="10.5" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="SHELL4" x="-25" y="1" length="middle"/>
+<pin name="SHELL3" x="-25" y="-1.5" length="middle"/>
+<wire x1="-20" y1="9" x2="20.5" y2="9" width="0.1524" layer="94"/>
+<wire x1="20.5" y1="9" x2="20.5" y2="-9.5" width="0.1524" layer="94"/>
+<wire x1="20.5" y1="-9.5" x2="-20" y2="-9.5" width="0.1524" layer="94"/>
+<wire x1="-20" y1="-9.5" x2="-20" y2="9" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -799,11 +851,42 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="USBC">
+<deviceset name="USBC" prefix="J">
 <gates>
+<gate name="G$1" symbol="USB-C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="USB-CSMD">
+<connects>
+<connect gate="G$1" pin="CC1" pad="A5"/>
+<connect gate="G$1" pin="CC2" pad="B5"/>
+<connect gate="G$1" pin="D+" pad="A6"/>
+<connect gate="G$1" pin="D-" pad="A7"/>
+<connect gate="G$1" pin="D2+" pad="B6"/>
+<connect gate="G$1" pin="D2-" pad="B7"/>
+<connect gate="G$1" pin="GND" pad="A1"/>
+<connect gate="G$1" pin="GND1" pad="A12"/>
+<connect gate="G$1" pin="GND2" pad="B1"/>
+<connect gate="G$1" pin="GND4" pad="B12"/>
+<connect gate="G$1" pin="RX1+" pad="B11"/>
+<connect gate="G$1" pin="RX1-" pad="B10"/>
+<connect gate="G$1" pin="RX2+" pad="A11"/>
+<connect gate="G$1" pin="RX2-" pad="A10"/>
+<connect gate="G$1" pin="SBU1" pad="A8"/>
+<connect gate="G$1" pin="SBU2" pad="B8"/>
+<connect gate="G$1" pin="SHELL1" pad="SHELL1"/>
+<connect gate="G$1" pin="SHELL2" pad="SHELL2"/>
+<connect gate="G$1" pin="SHELL3" pad="SHELL3"/>
+<connect gate="G$1" pin="SHELL4" pad="SHELL4"/>
+<connect gate="G$1" pin="TX1+" pad="A2"/>
+<connect gate="G$1" pin="TX1-" pad="A3"/>
+<connect gate="G$1" pin="TX2+" pad="B2"/>
+<connect gate="G$1" pin="TX2-" pad="B3"/>
+<connect gate="G$1" pin="VBUS" pad="A4"/>
+<connect gate="G$1" pin="VBUS2" pad="A9"/>
+<connect gate="G$1" pin="VBUS3" pad="B4"/>
+<connect gate="G$1" pin="VBUS4" pad="B9"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
