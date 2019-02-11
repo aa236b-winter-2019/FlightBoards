@@ -1180,6 +1180,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="15.25" y1="87.8" x2="15.258" y2="87.808" width="0.1524" layer="1"/>
 <wire x1="15.7510875" y1="86.792" x2="15.258" y2="86.792" width="0.1524" layer="1"/>
 <wire x1="15.25" y1="86.8" x2="15.258" y2="86.792" width="0.1524" layer="1"/>
+<wire x1="30.9164" y1="53.5866" x2="30.8014" y2="53.7016" width="0.1524" layer="16"/>
 <wire x1="32.82074375" y1="55.3366" x2="33.2664" y2="55.3366" width="0.1524" layer="16"/>
 <wire x1="30.4" y1="69.6" x2="30.3696" y2="69.6304" width="0.1524" layer="1"/>
 <wire x1="40.23" y1="74.96" x2="40.24" y2="74.97" width="0.1524" layer="16"/>
@@ -1319,6 +1320,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="82.5246" y1="68.8848" x2="82.5246" y2="68.9864" width="0.3048" layer="1"/>
 <wire x1="85.0646" y1="68.9864" x2="82.6262" y2="68.9864" width="0.3048" layer="1"/>
 <wire x1="82.6262" y1="68.9864" x2="82.5246" y2="68.8848" width="0.3048" layer="1"/>
+<wire x1="91.83" y1="51.79" x2="82.5246" y2="66.4464" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO">
 <contactref element="U14" pad="21"/>
@@ -1395,6 +1397,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="U.FL2">
 <contactref element="U12" pad="26"/>
 <contactref element="J5" pad="FEED"/>
+<wire x1="12.125" y1="86.38" x2="11.9286" y2="86.5764" width="0.1524" layer="1"/>
 <wire x1="12.125" y1="86.38" x2="13.04" y2="86.38" width="0.1524" layer="1"/>
 <wire x1="13.04" y1="86.38" x2="13.96" y2="87.3" width="0.1524" layer="1"/>
 <wire x1="13.96" y1="87.3" x2="15.25" y2="87.3" width="0.1524" layer="1"/>
@@ -1507,9 +1510,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U1" pad="7"/>
 <contactref element="Y1" pad="1"/>
 <wire x1="32.2764" y1="53.9766" x2="32.2764" y2="48.8174" width="0.1524" layer="16"/>
+<wire x1="32.2764" y1="48.8174" x2="32.2764" y2="48.7412" width="0.1524" layer="16"/>
 <wire x1="32.2764" y1="53.9766" x2="30.9164" y2="55.3366" width="0.1524" layer="16"/>
+<wire x1="29.0634" y1="55.362" x2="29.0888" y2="55.3366" width="0.2032" layer="16"/>
+<wire x1="29.0634" y1="55.362" x2="30.891" y2="55.362" width="0.2032" layer="16"/>
 <wire x1="30.891" y1="55.362" x2="30.9164" y2="55.3366" width="0.2032" layer="16"/>
-<wire x1="29.0634" y1="55.362" x2="30.891" y2="55.362" width="0.1524" layer="16"/>
 </signal>
 <signal name="UD-">
 <contactref element="U1" pad="6"/>
