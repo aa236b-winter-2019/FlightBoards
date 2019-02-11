@@ -17577,7 +17577,7 @@ Validate SPI pinout of SAMD21</text>
 <label x="185" y="144" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A_LEV" class="0">
+<net name="A_VLEV" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PA06"/>
 <wire x1="179" y1="142" x2="188" y2="142" width="0.1524" layer="91"/>
