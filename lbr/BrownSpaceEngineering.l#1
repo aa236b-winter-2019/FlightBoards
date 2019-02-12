@@ -334,22 +334,22 @@
 </package>
 <package name="QFN-16-PAD">
 <smd name="P$17" x="0" y="0" dx="1.45" dy="1.45" layer="1" rot="R270"/>
-<smd name="P$2" x="-1.3" y="0.25" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R90"/>
-<smd name="P$1" x="-1.3" y="0.75" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R90"/>
-<smd name="P$3" x="-1.3" y="-0.25" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R90"/>
-<smd name="P$4" x="-1.3" y="-0.75" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R90"/>
-<smd name="P$5" x="-0.75" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="50"/>
-<smd name="P$6" x="-0.25" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="50"/>
-<smd name="P$7" x="0.25" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="50"/>
-<smd name="P$8" x="0.75" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="50"/>
-<smd name="P$10" x="1.3" y="-0.25" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R270"/>
-<smd name="P$9" x="1.3" y="-0.75" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R270"/>
-<smd name="P$11" x="1.3" y="0.25" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R270"/>
-<smd name="P$12" x="1.3" y="0.75" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R270"/>
-<smd name="P$13" x="0.75" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R180"/>
-<smd name="P$14" x="0.25" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R180"/>
-<smd name="P$15" x="-0.25" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R180"/>
-<smd name="P$16" x="-0.75" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="50" rot="R180"/>
+<smd name="P$2" x="-1.3" y="0.25" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R90"/>
+<smd name="P$1" x="-1.3" y="0.75" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R90"/>
+<smd name="P$3" x="-1.3" y="-0.25" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R90"/>
+<smd name="P$4" x="-1.3" y="-0.75" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R90"/>
+<smd name="P$5" x="-0.75" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="40"/>
+<smd name="P$6" x="-0.25" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="40"/>
+<smd name="P$7" x="0.25" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="40"/>
+<smd name="P$8" x="0.75" y="-1.3" dx="0.25" dy="0.7" layer="1" roundness="40"/>
+<smd name="P$10" x="1.3" y="-0.25" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R270"/>
+<smd name="P$9" x="1.3" y="-0.75" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R270"/>
+<smd name="P$11" x="1.3" y="0.25" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R270"/>
+<smd name="P$12" x="1.3" y="0.75" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R270"/>
+<smd name="P$13" x="0.75" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R180"/>
+<smd name="P$14" x="0.25" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R180"/>
+<smd name="P$15" x="-0.25" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R180"/>
+<smd name="P$16" x="-0.75" y="1.3" dx="0.25" dy="0.7" layer="1" roundness="40" rot="R180"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>

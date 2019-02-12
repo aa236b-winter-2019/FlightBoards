@@ -17570,20 +17570,6 @@ Validate SPI pinout of SAMD21</text>
 <label x="117" y="61" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="I_BATT" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PA05"/>
-<wire x1="179" y1="144" x2="188" y2="144" width="0.1524" layer="91"/>
-<label x="185" y="144" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="A_VLEV" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PA06"/>
-<wire x1="179" y1="142" x2="188" y2="142" width="0.1524" layer="91"/>
-<label x="185" y="142" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="AIN" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PA07"/>
@@ -17727,13 +17713,6 @@ Validate SPI pinout of SAMD21</text>
 <label x="121" y="94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P_GOOD" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PA27"/>
-<wire x1="179" y1="102" x2="188" y2="102" width="0.1524" layer="91"/>
-<label x="180" y="102" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="5V_EN" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PB00"/>
@@ -17831,6 +17810,27 @@ Validate SPI pinout of SAMD21</text>
 <pinref part="U7" gate="G$1" pin="VSW"/>
 <wire x1="130.69" y1="137.92" x2="135" y2="137.92" width="0.1524" layer="91"/>
 <wire x1="135" y1="137.92" x2="135" y2="138" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="P_GOOD" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="PA08"/>
+<wire x1="179" y1="138" x2="183" y2="138" width="0.1524" layer="91"/>
+<label x="182" y="138" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I_BATT" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="PA06"/>
+<wire x1="179" y1="142" x2="182.5" y2="142" width="0.1524" layer="91"/>
+<label x="182.5" y="142" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A_VLEV" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="PA05"/>
+<wire x1="179" y1="144" x2="182.5" y2="144" width="0.1524" layer="91"/>
+<label x="182.5" y="144" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -18590,12 +18590,6 @@ Ichrg=988*Vprog/Rprog
 <junction x="129.032" y="138.176"/>
 <label x="137" y="138.25" size="1" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="R38" gate="G$1" pin="2"/>
-<wire x1="85" y1="115.5" x2="84.752" y2="115.5" width="0.1524" layer="91"/>
-<wire x1="84.752" y1="115.5" x2="84.752" y2="114.416" width="0.1524" layer="91"/>
-<label x="85" y="115.5" size="1" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="PGOOD" class="0">
 <segment>
@@ -19011,6 +19005,14 @@ Ichrg=988*Vprog/Rprog
 <wire x1="95" y1="103.416" x2="95" y2="103.5" width="0.1524" layer="91"/>
 <junction x="84.752" y="103.416"/>
 <label x="95" y="103.5" size="1" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="VBATT_IN" class="0">
+<segment>
+<pinref part="R38" gate="G$1" pin="2"/>
+<wire x1="84.752" y1="114.416" x2="84.752" y2="116.5" width="0.1524" layer="91"/>
+<wire x1="84.752" y1="116.5" x2="85" y2="116.5" width="0.1524" layer="91"/>
+<label x="85" y="117" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -19887,22 +19889,6 @@ Connection</text>
 <wire x1="163.576" y1="64.262" x2="165.862" y2="64.262" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="J17" gate="G$1" pin="D-"/>
-<pinref part="J18" gate="G$1" pin="3"/>
-<wire x1="195.714" y1="30.126" x2="199.644" y2="30.126" width="0.1524" layer="91"/>
-<wire x1="199.644" y1="30.126" x2="199.644" y2="30.226" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="J17" gate="G$1" pin="D+"/>
-<pinref part="J18" gate="G$1" pin="5"/>
-<wire x1="195.714" y1="27.586" x2="199.644" y2="27.586" width="0.1524" layer="91"/>
-<wire x1="199.644" y1="27.586" x2="199.644" y2="27.686" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="J17" gate="G$1" pin="VDD"/>
@@ -19983,6 +19969,22 @@ Connection</text>
 <pinref part="U12" gate="G$1" pin="!CS"/>
 <wire x1="18" y1="109" x2="15.5" y2="109" width="0.1524" layer="91"/>
 <label x="15.5" y="109" size="1" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="J17" gate="G$1" pin="D-"/>
+<pinref part="J18" gate="G$1" pin="3"/>
+<wire x1="195.714" y1="30.126" x2="199.644" y2="30.126" width="0.1524" layer="91"/>
+<wire x1="199.644" y1="30.126" x2="199.644" y2="30.226" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="J17" gate="G$1" pin="D+"/>
+<pinref part="J18" gate="G$1" pin="5"/>
+<wire x1="195.714" y1="27.586" x2="199.644" y2="27.586" width="0.1524" layer="91"/>
+<wire x1="199.644" y1="27.586" x2="199.644" y2="27.686" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
