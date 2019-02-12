@@ -120,13 +120,14 @@
 <wire x1="100" y1="82" x2="100" y2="0" width="0.127" layer="20"/>
 <wire x1="100" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
 <text x="35.9664" y="42.8244" size="1.778" layer="22" rot="MR270" align="center">PandaSat 
-Solar Cell X Board
+Solar Cell Y Board
 Rev A
 </text>
 <wire x1="57.975" y1="46.317" x2="70.475" y2="46.317" width="0.1524" layer="46"/>
 <wire x1="57.975" y1="46.317" x2="57.975" y2="33.817" width="0.1524" layer="46"/>
 <wire x1="57.975" y1="33.817" x2="70.475" y2="33.817" width="0.1524" layer="46"/>
 <wire x1="70.475" y1="33.817" x2="70.475" y2="46.317" width="0.1524" layer="46"/>
+<circle x="47.117" y="37.1094" radius="0.466971875" width="0.1524" layer="22"/>
 </plain>
 <libraries>
 <library name="Solar">
