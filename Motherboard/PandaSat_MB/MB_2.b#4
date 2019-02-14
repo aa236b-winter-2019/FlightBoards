@@ -2178,12 +2178,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <smd name="B3" x="-2" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
 <smd name="B2" x="-2.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
 <smd name="B1" x="-3" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
-<pad name="SHELL3" x="-4.49" y="-7.2" drill="1.1"/>
-<pad name="SHELL4" x="4.49" y="-7.2" drill="1.1"/>
-<pad name="SHELL1" x="-4.13" y="-1.25" drill="1.1" diameter="1.3" rot="R90"/>
-<pad name="SHELL2" x="4.13" y="-1.25" drill="1.1" diameter="1.3" rot="R90"/>
-<hole x="-3.6" y="0" drill="0.65"/>
-<hole x="3.6" y="0" drill="0.95"/>
 <wire x1="-4.6" y1="1.3" x2="4.6" y2="1.3" width="0.1524" layer="21"/>
 <wire x1="4.6" y1="1.3" x2="4.6" y2="-0.54" width="0.1524" layer="21"/>
 <wire x1="4.6" y1="-2" x2="4.6" y2="-6.1" width="0.1524" layer="21"/>
@@ -2202,6 +2196,31 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="-4.6" y1="-1.9" x2="-4.6" y2="-6.2" width="0.1524" layer="51"/>
 <text x="-4.4" y="1.87" size="1" layer="25">&gt;NAME</text>
 <text x="0.91" y="1.96" size="1" layer="27">&gt;VALUE</text>
+<pad name="SHELL1" x="-4.13" y="-1.25" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="SHELL2" x="4.13" y="-1.25" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="SHELL3" x="-4.49" y="-7.2" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="SHELL4" x="4.49" y="-7.2" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<wire x1="-4.38" y1="-0.95" x2="-4.38" y2="-1.55" width="0.01" layer="46"/>
+<wire x1="-4.38" y1="-0.95" x2="-3.88" y2="-0.95" width="0.01" layer="46" curve="-180"/>
+<wire x1="-3.88" y1="-0.95" x2="-3.88" y2="-1.55" width="0.01" layer="46"/>
+<wire x1="-3.88" y1="-1.55" x2="-4.38" y2="-1.55" width="0.01" layer="46" curve="-180"/>
+<wire x1="-4.74" y1="-6.9" x2="-4.74" y2="-7.5" width="0.01" layer="46"/>
+<wire x1="-4.74" y1="-6.9" x2="-4.24" y2="-6.9" width="0.01" layer="46" curve="-180"/>
+<wire x1="-4.24" y1="-6.9" x2="-4.24" y2="-7.5" width="0.01" layer="46"/>
+<wire x1="-4.24" y1="-7.5" x2="-4.74" y2="-7.5" width="0.01" layer="46" curve="-180"/>
+<wire x1="4.24" y1="-6.9" x2="4.24" y2="-7.5" width="0.01" layer="46"/>
+<wire x1="4.24" y1="-6.9" x2="4.74" y2="-6.9" width="0.01" layer="46" curve="-180"/>
+<wire x1="4.74" y1="-6.9" x2="4.74" y2="-7.5" width="0.01" layer="46"/>
+<wire x1="4.74" y1="-7.5" x2="4.24" y2="-7.5" width="0.01" layer="46" curve="-180"/>
+<wire x1="3.88" y1="-0.95" x2="3.88" y2="-1.55" width="0.01" layer="46"/>
+<wire x1="3.88" y1="-0.95" x2="4.38" y2="-0.95" width="0.01" layer="46" curve="-180"/>
+<wire x1="4.38" y1="-0.95" x2="4.38" y2="-1.55" width="0.01" layer="46"/>
+<wire x1="4.38" y1="-1.55" x2="3.88" y2="-1.55" width="0.01" layer="46" curve="-180"/>
+<wire x1="3.75" y1="0.325" x2="3.75" y2="-0.325" width="0.01" layer="46" curve="-180"/>
+<wire x1="3.75" y1="-0.325" x2="3.45" y2="-0.325" width="0.01" layer="46"/>
+<wire x1="3.45" y1="-0.325" x2="3.45" y2="0.325" width="0.01" layer="46" curve="-180"/>
+<wire x1="3.75" y1="0.325" x2="3.45" y2="0.325" width="0.01" layer="46"/>
+<circle x="-3.6" y="0" radius="0.325" width="0.01" layer="46"/>
 </package>
 </packages>
 <packages3d>
@@ -3054,22 +3073,6 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </package>
 </packages>
 </library>
-<library name="SparkFun-Aesthetics">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3901,10 +3904,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="-73.2028" y="82.8548" size="0.762" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-70.3834" y="83.4644" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-76.2762" y="-14.9987" smashed="yes"/>
-<element name="FRAME2" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-76.2762" y="-23.6601" smashed="yes"/>
-<element name="FRAME3" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-76.2762" y="-32.3215" smashed="yes"/>
-<element name="FRAME4" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-76.2762" y="-40.9829" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -4816,8 +4815,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U5" pad="SDO"/>
 <wire x1="-54.6552" y1="32.4608" x2="-54.6552" y2="34.24796875" width="0.1524" layer="1"/>
 <wire x1="-54.665" y1="32.451" x2="-54.6552" y2="32.4608" width="0.1524" layer="1"/>
-<wire x1="-15.0368" y1="57.277" x2="-15.0368" y2="57.8056" width="0.1524" layer="1"/>
-<wire x1="-15.0368" y1="57.8056" x2="-14.9844" y2="57.858" width="0.1524" layer="1"/>
 <contactref element="U12" pad="2"/>
 <via x="-19.4818" y="52.959" extent="1-16" drill="0.35"/>
 <via x="-17.526" y="52.959" extent="1-16" drill="0.35"/>
@@ -5255,12 +5252,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-57.5484" y1="35.401" x2="-57.6246" y2="35.4772" width="0.1524" layer="1"/>
 <wire x1="-57.6246" y1="35.4772" x2="-58.17823125" y2="35.4772" width="0.1524" layer="1"/>
 <wire x1="-58.17823125" y1="35.4772" x2="-60.9727" y2="32.68273125" width="0.1524" layer="1"/>
-<wire x1="-60.9727" y1="32.68273125" x2="-60.9727" y2="6.3463" width="0.1524" layer="1"/>
+<wire x1="-60.9727" y1="32.68273125" x2="-60.9727" y2="26.289" width="0.1524" layer="1"/>
+<wire x1="-60.9727" y1="26.289" x2="-60.9727" y2="6.3463" width="0.1524" layer="1"/>
 <wire x1="-60.9727" y1="6.3463" x2="-61.3102" y2="6.0088" width="0.1524" layer="1"/>
 <wire x1="-61.3102" y1="5.1198" x2="-61.3102" y2="6.0088" width="0.1524" layer="1"/>
-<wire x1="-60.1014" y1="26.3266" x2="-60.1898" y2="26.2382" width="0.1524" layer="1"/>
-<wire x1="-60.1898" y1="26.2382" x2="-60.9727" y2="26.2382" width="0.1524" layer="1"/>
-<wire x1="-60.9727" y1="32.68273125" x2="-60.1014" y2="26.3266" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.1014" y1="26.3266" x2="-60.9351" y2="26.3266" width="0.1524" layer="1"/>
+<wire x1="-60.9351" y1="26.3266" x2="-60.9727" y2="26.289" width="0.1524" layer="1"/>
 </signal>
 <signal name="PL_UART_TX">
 <contactref element="U7" pad="39"/>
@@ -6579,10 +6576,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J3" pad="A9"/>
 <contactref element="D1" pad="2"/>
 <wire x1="-48.9766" y1="10.5152" x2="-48.9766" y2="9.8498" width="0.1524" layer="1"/>
-<wire x1="-49.2266" y1="9.5998" x2="-49.2266" y2="8.8152" width="0.1524" layer="1"/>
 <wire x1="-48.9766" y1="9.8498" x2="-49.2266" y2="9.5998" width="0.1524" layer="1"/>
 <wire x1="-46.4766" y1="10.5152" x2="-46.4766" y2="9.8352" width="0.1524" layer="1"/>
-<wire x1="-46.7266" y1="9.5852" x2="-46.7266" y2="8.8152" width="0.1524" layer="1"/>
 <wire x1="-46.4766" y1="9.8352" x2="-46.7266" y2="9.5852" width="0.1524" layer="1"/>
 <wire x1="-48.9766" y1="10.5152" x2="-48.9766" y2="14.1278" width="0.3048" layer="1"/>
 <wire x1="-48.9766" y1="14.1278" x2="-52.8828" y2="18.034" width="0.3048" layer="1"/>
@@ -6590,6 +6585,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-55.3336" y1="18.034" x2="-55.3572" y2="18.0104" width="0.3048" layer="1"/>
 <wire x1="-46.4766" y1="10.5152" x2="-46.4766" y2="11.6278" width="0.3048" layer="1"/>
 <wire x1="-46.4766" y1="11.6278" x2="-48.9766" y2="14.1278" width="0.3048" layer="1"/>
+<wire x1="-46.7266" y1="9.5852" x2="-46.7266" y2="8.7898" width="0.1524" layer="1"/>
+<wire x1="-49.2266" y1="9.5998" x2="-49.2266" y2="8.739" width="0.1524" layer="1"/>
 </signal>
 <signal name="SPI_CS_MRAM">
 <contactref element="U12" pad="1"/>

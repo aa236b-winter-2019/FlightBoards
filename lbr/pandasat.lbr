@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -375,6 +375,33 @@
 <wire x1="3.75" y1="0.325" x2="3.45" y2="0.325" width="0.01" layer="46"/>
 <circle x="-3.6" y="0" radius="0.325" width="0.01" layer="46"/>
 </package>
+<package name="BALUN">
+<smd name="1" x="-0.4" y="1" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="0.4" y="1" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="-0.4" y="-1" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<smd name="4" x="0.4" y="-1" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+</package>
+<package name="TAPE">
+<smd name="RF_2" x="0" y="0" dx="14" dy="10" layer="1" rot="R90"/>
+<pad name="RF" x="0" y="0.1" drill="2.5" diameter="3"/>
+<wire x1="-7.05" y1="6" x2="-7.05" y2="-6" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="6" x2="-11.05" y2="-6" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="-6" x2="-7.05" y2="-6" width="0.005" layer="46" curve="180"/>
+<wire x1="-11.05" y1="6" x2="-7.05" y2="6" width="0.005" layer="46" curve="-180"/>
+<wire x1="-17.09" y1="6.01" x2="-17.09" y2="-6.19" width="0.005" layer="46"/>
+<wire x1="-21.15" y1="6.49" x2="-21.15" y2="-5.71" width="0.005" layer="46"/>
+<wire x1="-21.15" y1="6.49" x2="-17.09" y2="6.01" width="0.005" layer="46" curve="-161.075356"/>
+<wire x1="-21.15" y1="-5.71" x2="-17.09" y2="-6.19" width="0.005" layer="46" curve="180"/>
+<hole x="-14.03" y="0.02" drill="2"/>
+</package>
+<package name="BURN_WIRE">
+<pad name="200" x="0" y="0" drill="0.6" shape="offset" rot="R270"/>
+<pad name="2" x="0.78" y="-1.92" drill="0.6" shape="offset" rot="R135"/>
+<pad name="20" x="0" y="-1.14" drill="0.6"/>
+<pad name="100" x="-4.99" y="-0.02" drill="0.6" shape="offset" rot="R270"/>
+<pad name="1" x="-5.78" y="-1.94" drill="0.6" shape="offset" rot="R45"/>
+<pad name="10" x="-4.99" y="-1.16" drill="0.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATSAMD51">
@@ -610,6 +637,35 @@
 <wire x1="20.5" y1="9" x2="20.5" y2="-9.5" width="0.1524" layer="94"/>
 <wire x1="20.5" y1="-9.5" x2="-20" y2="-9.5" width="0.1524" layer="94"/>
 <wire x1="-20" y1="-9.5" x2="-20" y2="9" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="BALUN">
+<pin name="BAL_1" x="-2.54" y="5.08" length="short" direction="in" rot="R270"/>
+<pin name="BAL_2" x="2.54" y="5.08" length="short" direction="in" rot="R270"/>
+<wire x1="-2.5" y1="1.5" x2="-2.5" y2="-4" width="0.254" layer="94"/>
+<circle x="-2.5" y="-4.5" radius="0.5" width="0.254" layer="94"/>
+<circle x="-2.5" y="2" radius="0.5" width="0.254" layer="94"/>
+<circle x="2.5" y="2" radius="0.5" width="0.254" layer="94"/>
+<wire x1="-2.5" y1="1.5" x2="2.5" y2="1.5" width="0.254" layer="94" curve="180"/>
+<pin name="UNBAL" x="-2.5" y="-4.42" length="point" rot="R90"/>
+<circle x="2.5" y="-4.5" radius="0.5" width="0.254" layer="94"/>
+<pin name="GND" x="4.96" y="-4.5" length="short" rot="R180"/>
+</symbol>
+<symbol name="ANTENNA">
+<pin name="RF" x="0" y="-5.08" length="middle" rot="R90"/>
+<wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="BURN_TERM">
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -905,6 +961,55 @@
 <connect gate="G$1" pin="VBUS2" pad="A9"/>
 <connect gate="G$1" pin="VBUS3" pad="B4"/>
 <connect gate="G$1" pin="VBUS4" pad="B9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BALUN">
+<gates>
+<gate name="G$1" symbol="BALUN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BALUN">
+<connects>
+<connect gate="G$1" pin="BAL_1" pad="1"/>
+<connect gate="G$1" pin="BAL_2" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="UNBAL" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANTENNA" prefix="ANT" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ANTENNA" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="TAPE">
+<connects>
+<connect gate="G$1" pin="RF" pad="RF RF_2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BURN_TERM" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BURN_TERM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BURN_WIRE">
+<connects>
+<connect gate="G$1" pin="1" pad="1 10 100"/>
+<connect gate="G$1" pin="2" pad="2 20 200"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -17177,7 +17177,7 @@ Ichrg=988*Vprog/Rprog
 </text>
 <text x="153.94" y="6.62" size="3.175" layer="94">Damian Loya, Matt Poole, Tane Tatum</text>
 <text x="175.39" y="174.73" size="2.54" layer="97">LEDS</text>
-<text x="177.39" y="130.73" size="2.54" layer="97">Green LEDS 0.7V drop &lt;8mA</text>
+<text x="177.39" y="130.73" size="2.54" layer="97">Red LEDS 1.7V drop &lt;5mA</text>
 </plain>
 <instances>
 <instance part="R20" gate="G$1" x="195.58" y="58.42" smashed="yes" rot="R270">
