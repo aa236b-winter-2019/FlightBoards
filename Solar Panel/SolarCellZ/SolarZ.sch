@@ -658,8 +658,8 @@ distributor RS 112-3794</description>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="U$1" gate="G$1" x="50.8" y="187.96" smashed="yes" rot="R180"/>
-<instance part="U$2" gate="G$1" x="58.42" y="180.34" smashed="yes" rot="R270"/>
-<instance part="U$3" gate="G$1" x="43.18" y="180.34" smashed="yes" rot="R90"/>
+<instance part="U$2" gate="G$1" x="43.18" y="180.34" smashed="yes" rot="R90"/>
+<instance part="U$3" gate="G$1" x="58.42" y="180.34" smashed="yes" rot="R270"/>
 <instance part="13" gate="G$1" x="91.44" y="137.16" smashed="yes" rot="R180"/>
 <instance part="D2" gate="G$1" x="99.06" y="129.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.155" y="127.254" size="1.778" layer="95" rot="R90"/>
@@ -977,16 +977,16 @@ distributor RS 112-3794</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="BAL_1"/>
+<pinref part="U$1" gate="G$1" pin="BAL_2"/>
 <pinref part="U$2" gate="G$1" pin="RF"/>
-<wire x1="53.34" y1="182.88" x2="53.34" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="182.88" x2="48.26" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RF_P" class="0">
+<net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="BAL_2"/>
+<pinref part="U$1" gate="G$1" pin="BAL_1"/>
 <pinref part="U$3" gate="G$1" pin="RF"/>
-<wire x1="48.26" y1="182.88" x2="48.26" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="182.88" x2="53.34" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
