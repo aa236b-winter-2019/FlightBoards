@@ -8,7 +8,7 @@
 </settings>
 <grid distance="6" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -197,6 +197,8 @@
 <hole x="91.575" y="45.25" drill="3"/>
 <circle x="91.575" y="45.25" radius="2.75" width="0.001" layer="39"/>
 <circle x="91.575" y="45.25" radius="2.75" width="0.001" layer="40"/>
+<text x="32.3088" y="14.9352" size="1.778" layer="22" rot="MR0">PandaSat
+Solar Panel Z</text>
 </plain>
 <libraries>
 <library name="Solar">
@@ -562,8 +564,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="51.55" y1="31.762" x2="51.55" y2="29.25" width="0.6096" layer="1"/>
 <wire x1="51.55" y1="29.25" x2="51.55" y2="15.071" width="0.6096" layer="1"/>
 <wire x1="51.55" y1="15.071" x2="51.6085" y2="15.0125" width="0.6096" layer="1"/>
-<wire x1="45.7269" y1="40.2429" x2="47.7999" y2="42.3159" width="0.6096" layer="1"/>
-<wire x1="47.7999" y1="42.3159" x2="47.7999" y2="42.7001" width="0.6096" layer="1"/>
+<wire x1="45.7269" y1="40.2429" x2="47.2533" y2="40.2429" width="0.3048" layer="1"/>
+<wire x1="47.2533" y1="40.2429" x2="47.7999" y2="40.7895" width="0.3048" layer="1"/>
+<wire x1="47.7999" y1="40.7895" x2="47.7999" y2="40.789465625" width="0.3048" layer="1"/>
+<wire x1="47.7999" y1="40.789465625" x2="47.7999" y2="42.7001" width="0.3048" layer="1"/>
 <polygon width="0.001" layer="1">
 <vertex x="4.1148" y="94.9452"/>
 <vertex x="4.1148" y="86.4108"/>
@@ -605,8 +609,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$2">
 <contactref element="X1" pad="1"/>
 <contactref element="U$1" pad="4"/>
-<wire x1="44.9269" y1="40.2429" x2="44.9269" y2="44.9269" width="0.6096" layer="1"/>
-<wire x1="44.9269" y1="44.9269" x2="45.25" y2="45.25" width="0.6096" layer="1"/>
+<wire x1="44.9269" y1="40.2429" x2="44.9269" y2="44.9269" width="0.1524" layer="1"/>
+<wire x1="44.9269" y1="44.9269" x2="45.25" y2="45.25" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="4" pad="P$2"/>
@@ -6124,23 +6128,23 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U$3" pad="RF"/>
 <contactref element="U$3" pad="RF_2"/>
 <contactref element="U$1" pad="2"/>
-<wire x1="44.911" y1="38.227" x2="44.9269" y2="38.2429" width="0.6096" layer="1"/>
-<wire x1="41.0972" y1="38.227" x2="44.911" y2="38.227" width="0.6096" layer="1"/>
-<wire x1="30.25" y1="45.25" x2="36.919" y2="45.25" width="0.6096" layer="1"/>
-<wire x1="39.116" y1="43.053" x2="39.116" y2="40.2082" width="0.6096" layer="1"/>
-<wire x1="39.116" y1="40.2082" x2="41.0972" y2="38.227" width="0.6096" layer="1"/>
-<wire x1="36.919" y1="45.25" x2="39.116" y2="43.053" width="0.6096" layer="1"/>
+<wire x1="44.911" y1="38.227" x2="44.9269" y2="38.2429" width="0.1524" layer="1"/>
+<wire x1="41.0972" y1="38.227" x2="44.911" y2="38.227" width="0.1524" layer="1"/>
+<wire x1="30.25" y1="45.25" x2="36.919" y2="45.25" width="0.1524" layer="1"/>
+<wire x1="39.116" y1="43.053" x2="39.116" y2="40.2082" width="0.1524" layer="1"/>
+<wire x1="39.116" y1="40.2082" x2="41.0972" y2="38.227" width="0.1524" layer="1"/>
+<wire x1="36.919" y1="45.25" x2="39.116" y2="43.053" width="0.1524" layer="1"/>
 <wire x1="30.25" y1="45.25" x2="30.25" y2="45.35" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$2" pad="RF"/>
 <contactref element="U$2" pad="RF_2"/>
 <contactref element="U$1" pad="1"/>
-<wire x1="60.25" y1="45.25" x2="52.8192" y2="45.25" width="0.6096" layer="1"/>
-<wire x1="51.0286" y1="43.4594" x2="51.0286" y2="40.2844" width="0.6096" layer="1"/>
-<wire x1="48.9871" y1="38.2429" x2="45.7269" y2="38.2429" width="0.6096" layer="1"/>
-<wire x1="51.0286" y1="40.2844" x2="48.9871" y2="38.2429" width="0.6096" layer="1"/>
-<wire x1="52.8192" y1="45.25" x2="51.0286" y2="43.4594" width="0.6096" layer="1"/>
+<wire x1="60.25" y1="45.25" x2="52.8192" y2="45.25" width="0.1524" layer="1"/>
+<wire x1="51.0286" y1="43.4594" x2="51.0286" y2="40.2844" width="0.1524" layer="1"/>
+<wire x1="48.9871" y1="38.2429" x2="45.7269" y2="38.2429" width="0.1524" layer="1"/>
+<wire x1="51.0286" y1="40.2844" x2="48.9871" y2="38.2429" width="0.1524" layer="1"/>
+<wire x1="52.8192" y1="45.25" x2="51.0286" y2="43.4594" width="0.1524" layer="1"/>
 <wire x1="60.25" y1="45.25" x2="60.25" y2="45.15" width="0.6096" layer="1"/>
 </signal>
 </signals>
@@ -6153,4 +6157,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
