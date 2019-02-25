@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -376,23 +376,27 @@
 <circle x="-3.6" y="0" radius="0.325" width="0.01" layer="46"/>
 </package>
 <package name="BALUN">
-<smd name="1" x="-0.04" y="0.1" dx="0.075" dy="0.04" layer="1" rot="R90"/>
-<smd name="2" x="0.04" y="0.1" dx="0.075" dy="0.04" layer="1" rot="R90"/>
-<smd name="3" x="-0.04" y="-0.09" dx="0.075" dy="0.04" layer="1" rot="R270"/>
-<smd name="4" x="0.04" y="-0.09" dx="0.075" dy="0.04" layer="1" rot="R270"/>
+<smd name="1" x="-0.4" y="1" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="0.4" y="1" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="-0.4" y="-1" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<smd name="4" x="0.4" y="-1" dx="0.75" dy="0.4" layer="1" rot="R270"/>
 </package>
 <package name="TAPE">
-<smd name="RF_2" x="0" y="0" dx="1.4" dy="1" layer="1" rot="R90"/>
-<pad name="RF" x="0" y="0" drill="0.25" diameter="0.3"/>
-<wire x1="-0.55" y1="0.6" x2="-0.55" y2="-0.6" width="0.005" layer="46"/>
-<wire x1="-0.85" y1="0.6" x2="-0.85" y2="-0.6" width="0.005" layer="46"/>
-<wire x1="-0.85" y1="-0.6" x2="-0.55" y2="-0.6" width="0.005" layer="46" curve="180"/>
-<wire x1="-0.85" y1="0.6" x2="-0.55" y2="0.6" width="0.005" layer="46" curve="-180"/>
-<wire x1="-1.55" y1="0.6" x2="-1.55" y2="-0.6" width="0.005" layer="46"/>
-<wire x1="-1.85" y1="0.6" x2="-1.85" y2="-0.6" width="0.005" layer="46"/>
-<wire x1="-1.85" y1="0.6" x2="-1.55" y2="0.6" width="0.005" layer="46" curve="-161.075356"/>
-<wire x1="-1.85" y1="-0.6" x2="-1.55" y2="-0.6" width="0.005" layer="46" curve="180"/>
-<hole x="-1.2" y="0" drill="0.2"/>
+<smd name="RF_2" x="0" y="0" dx="14" dy="10" layer="1" rot="R90"/>
+<pad name="RF" x="0" y="0.1" drill="2.5" diameter="3"/>
+<wire x1="-7.05" y1="8" x2="-7.05" y2="-6" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="8" x2="-11.05" y2="-6" width="0.005" layer="46"/>
+<wire x1="-21.15" y1="6.49" x2="-21.15" y2="-8" width="0.005" layer="46"/>
+<hole x="-14.03" y="0.02" drill="2"/>
+<wire x1="-21.15" y1="6.5" x2="-21.15" y2="8" width="0.005" layer="46"/>
+<wire x1="-21.15" y1="8" x2="-17.1" y2="8" width="0.005" layer="46"/>
+<wire x1="-17.1" y1="8" x2="-17.1" y2="-8" width="0.005" layer="46"/>
+<wire x1="-17.1" y1="-8" x2="-21.15" y2="-8" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="8" x2="-7.05" y2="8" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="-6" x2="-11.05" y2="-8" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="-8" x2="-9.05" y2="-8" width="0.005" layer="46"/>
+<wire x1="-9.05" y1="-8" x2="-7.05" y2="-8" width="0.005" layer="46"/>
+<wire x1="-7.05" y1="-8" x2="-7.05" y2="-6" width="0.005" layer="46"/>
 </package>
 <package name="BURN_WIRE">
 <pad name="200" x="0" y="0" drill="0.6" shape="offset" rot="R270"/>
@@ -1001,11 +1005,16 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="BURN_TERM">
+<deviceset name="BURN_TERM" prefix="F" uservalue="yes">
 <gates>
+<gate name="G$1" symbol="BURN_TERM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="BURN_WIRE">
+<connects>
+<connect gate="G$1" pin="1" pad="1 10 100"/>
+<connect gate="G$1" pin="2" pad="2 20 200"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

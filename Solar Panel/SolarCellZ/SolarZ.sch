@@ -321,12 +321,13 @@ distributor RS 112-3794</description>
 <wire x1="-21.1" y1="-8" x2="-17.1" y2="-8" width="0.005" layer="46"/>
 </package>
 <package name="BURN_WIRE">
-<pad name="200" x="0" y="0" drill="0.6" shape="offset" rot="R270"/>
-<pad name="2" x="0.78" y="-1.92" drill="0.6" shape="offset" rot="R135"/>
-<pad name="20" x="0" y="-1.14" drill="0.6"/>
-<pad name="100" x="-4.99" y="-0.02" drill="0.6" shape="offset" rot="R270"/>
-<pad name="1" x="-5.78" y="-1.94" drill="0.6" shape="offset" rot="R45"/>
-<pad name="10" x="-4.99" y="-1.16" drill="0.6"/>
+<pad name="1" x="-5.65" y="-2.032" drill="0.6" diameter="1.016" shape="offset" rot="R45"/>
+<pad name="100" x="-4.95" y="-0.332" drill="0.6" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="10" x="-5" y="-1.3" drill="0.6" diameter="1.016"/>
+<pad name="2" x="0.65" y="-2.032" drill="0.6" diameter="1.016" shape="offset" rot="R135"/>
+<pad name="200" x="-0.05" y="-0.332" drill="0.6" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="20" x="0" y="-1.3" drill="0.6" diameter="1.016" rot="R180"/>
+<circle x="-2.5" y="-1" radius="0.1" width="0.1524" layer="23"/>
 </package>
 </packages>
 <symbols>
@@ -598,7 +599,8 @@ distributor RS 112-3794</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.1524" drill="0.3">
+<clearance class="0" value="0.127"/>
 </class>
 </classes>
 <parts>
@@ -630,12 +632,12 @@ distributor RS 112-3794</description>
 <part name="11" library="Solar" deviceset="KXOB22-04X3F" device=""/>
 <part name="U$4" library="Solar" deviceset="M20-8760342" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="F2" library="pandasat" deviceset="BURN_TERM" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="F1" library="pandasat" deviceset="BURN_TERM" device=""/>
 <part name="12" library="Solar" deviceset="SLMD121H04L" device=""/>
 <part name="D8" library="Solar" deviceset="SB_DIODE" device=""/>
 <part name="14" library="Solar" deviceset="SLMD121H04L" device=""/>
+<part name="F1" library="pandasat" deviceset="BURN_TERM" device=""/>
+<part name="F2" library="pandasat" deviceset="BURN_TERM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -698,16 +700,16 @@ distributor RS 112-3794</description>
 <instance part="GND4" gate="1" x="89.246" y="198.124" smashed="yes">
 <attribute name="VALUE" x="86.96" y="194.822" size="1.778" layer="96"/>
 </instance>
-<instance part="F2" gate="G$1" x="91.44" y="180.34" smashed="yes"/>
 <instance part="GND5" gate="1" x="96.866" y="175.264" smashed="yes">
 <attribute name="VALUE" x="94.58" y="171.962" size="1.778" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="88.9" y="177.8" smashed="yes"/>
 <instance part="12" gate="G$1" x="88.9" y="66.04" smashed="yes" rot="R90"/>
 <instance part="D8" gate="G$1" x="99.06" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.155" y="66.294" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="14" gate="G$1" x="114.3" y="66.04" smashed="yes" rot="R90"/>
+<instance part="F1" gate="G$1" x="91.44" y="180.34" smashed="yes"/>
+<instance part="F2" gate="G$1" x="88.9" y="177.8" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -724,14 +726,14 @@ distributor RS 112-3794</description>
 <junction x="53.3" y="192.38"/>
 </segment>
 <segment>
-<pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="96.52" y1="180.34" x2="96.52" y2="177.804" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="177.804" x2="96.866" y2="177.804" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="177.8" x2="96.866" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="96.866" y1="177.8" x2="96.866" y2="177.804" width="0.1524" layer="91"/>
 <junction x="96.866" y="177.804"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
@@ -886,11 +888,11 @@ distributor RS 112-3794</description>
 <wire x1="83.82" y1="185.42" x2="83.82" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="P$6"/>
 <wire x1="83.82" y1="180.34" x2="81.28" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="F2" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="180.34" x2="83.82" y2="180.34" width="0.1524" layer="91"/>
 <junction x="83.82" y="180.34"/>
-<pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="177.8" x2="83.82" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="F2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">

@@ -310,15 +310,15 @@ distributor RS 112-3794</description>
 <package name="TAPE">
 <smd name="RF_2" x="0" y="0" dx="14" dy="10" layer="1" rot="R90"/>
 <pad name="RF" x="0" y="0.1" drill="2.5" diameter="3"/>
-<wire x1="-7.05" y1="6" x2="-7.05" y2="-6" width="0.005" layer="46"/>
-<wire x1="-11.05" y1="6" x2="-11.05" y2="-6" width="0.005" layer="46"/>
-<wire x1="-11.05" y1="-6" x2="-7.05" y2="-6" width="0.005" layer="46" curve="180"/>
-<wire x1="-11.05" y1="6" x2="-7.05" y2="6" width="0.005" layer="46" curve="-180"/>
-<wire x1="-17.09" y1="6.01" x2="-17.09" y2="-6.19" width="0.005" layer="46"/>
-<wire x1="-21.15" y1="6.49" x2="-21.15" y2="-5.71" width="0.005" layer="46"/>
-<wire x1="-21.15" y1="6.49" x2="-17.09" y2="6.01" width="0.005" layer="46" curve="-161.075356"/>
-<wire x1="-21.15" y1="-5.71" x2="-17.09" y2="-6.19" width="0.005" layer="46" curve="180"/>
+<wire x1="-7.05" y1="8" x2="-7.05" y2="-8" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="8" x2="-11.05" y2="-8" width="0.005" layer="46"/>
 <hole x="-14.03" y="0.02" drill="2"/>
+<wire x1="-11.05" y1="8" x2="-7.05" y2="8" width="0.005" layer="46"/>
+<wire x1="-11.05" y1="-8" x2="-7.05" y2="-8" width="0.005" layer="46"/>
+<wire x1="-17.1" y1="8" x2="-17.1" y2="-8" width="0.005" layer="46"/>
+<wire x1="-21.1" y1="8" x2="-21.1" y2="-8" width="0.005" layer="46"/>
+<wire x1="-21.1" y1="8" x2="-17.1" y2="8" width="0.005" layer="46"/>
+<wire x1="-21.1" y1="-8" x2="-17.1" y2="-8" width="0.005" layer="46"/>
 </package>
 <package name="BURN_WIRE">
 <pad name="200" x="0" y="0" drill="0.6" shape="offset" rot="R270"/>
