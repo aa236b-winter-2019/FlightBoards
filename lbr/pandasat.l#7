@@ -394,6 +394,14 @@
 <wire x1="-1.85" y1="-0.6" x2="-1.55" y2="-0.6" width="0.005" layer="46" curve="180"/>
 <hole x="-1.2" y="0" drill="0.2"/>
 </package>
+<package name="BURN_WIRE">
+<pad name="200" x="0" y="0" drill="0.6" shape="offset" rot="R270"/>
+<pad name="2" x="0.78" y="-1.92" drill="0.6" shape="offset" rot="R135"/>
+<pad name="20" x="0" y="-1.14" drill="0.6"/>
+<pad name="100" x="-4.99" y="-0.02" drill="0.6" shape="offset" rot="R270"/>
+<pad name="1" x="-5.78" y="-1.94" drill="0.6" shape="offset" rot="R45"/>
+<pad name="10" x="-4.99" y="-1.16" drill="0.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATSAMD51">
@@ -647,6 +655,17 @@
 <wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="BURN_TERM">
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -967,7 +986,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ANTENNA">
+<deviceset name="ANTENNA" prefix="ANT" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="ANTENNA" x="0" y="5.08"/>
 </gates>
@@ -975,6 +994,22 @@
 <device name="" package="TAPE">
 <connects>
 <connect gate="G$1" pin="RF" pad="RF RF_2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BURN_TERM" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BURN_TERM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BURN_WIRE">
+<connects>
+<connect gate="G$1" pin="1" pad="1 10 100"/>
+<connect gate="G$1" pin="2" pad="2 20 200"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -579,6 +579,14 @@ distributor RS 112-3794</description>
 <wire x1="-1.85" y1="-0.6" x2="-1.55" y2="-0.6" width="0.005" layer="46" curve="180"/>
 <hole x="-1.2" y="0" drill="0.2"/>
 </package>
+<package name="BURN_WIRE">
+<pad name="200" x="0" y="0" drill="0.6" shape="offset" rot="R270"/>
+<pad name="2" x="0.78" y="-1.92" drill="0.6" shape="offset" rot="R135"/>
+<pad name="20" x="0" y="-1.14" drill="0.6"/>
+<pad name="100" x="-4.99" y="-0.02" drill="0.6" shape="offset" rot="R270"/>
+<pad name="1" x="-5.78" y="-1.94" drill="0.6" shape="offset" rot="R45"/>
+<pad name="10" x="-4.99" y="-1.16" drill="0.6"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X3-SHROUDED" urn="urn:adsk.eagle:package:38264/1" type="box">
@@ -702,6 +710,17 @@ CONN_03x2
 <wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="BURN_TERM">
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -899,6 +918,22 @@ CONN_03x2
 </device>
 </devices>
 </deviceset>
+<deviceset name="BURN_TERM" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BURN_TERM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BURN_WIRE">
+<connects>
+<connect gate="G$1" pin="1" pad="1 10 100"/>
+<connect gate="G$1" pin="2" pad="2 20 200"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -1046,6 +1081,8 @@ CONN_03x2
 <part name="7" library="Solar" deviceset="SLMD121H04L" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="F1" library="pandasat" deviceset="BURN_TERM" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1098,6 +1135,10 @@ CONN_03x2
 <instance part="GND2" gate="1" x="99.406" y="76.204" smashed="yes">
 <attribute name="VALUE" x="97.12" y="72.902" size="1.778" layer="96"/>
 </instance>
+<instance part="F1" gate="G$1" x="149.86" y="182.88" smashed="yes"/>
+<instance part="GND3" gate="1" x="155.286" y="172.724" smashed="yes">
+<attribute name="VALUE" x="153" y="169.422" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1141,6 +1182,12 @@ CONN_03x2
 <wire x1="99.06" y1="86.36" x2="99.406" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="99.406" y1="86.36" x2="99.406" y2="78.744" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="154.94" y1="182.88" x2="155.286" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="155.286" y1="182.88" x2="155.286" y2="175.264" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VSOLAR" class="0">
 <segment>
@@ -1167,9 +1214,11 @@ CONN_03x2
 <pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="130.082" y1="185.176" x2="130.082" y2="182.636" width="0.1524" layer="91"/>
 <wire x1="130.082" y1="182.636" x2="130.082" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="130.082" y1="182.88" x2="134.62" y2="182.88" width="0.1524" layer="91"/>
 <junction x="130.082" y="182.636"/>
 <label x="134.62" y="182.88" size="1.778" layer="95"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="182.88" x2="144.78" y2="182.636" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="182.636" x2="130.082" y2="182.636" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
