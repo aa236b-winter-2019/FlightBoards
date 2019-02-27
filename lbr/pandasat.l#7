@@ -6,7 +6,11 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
+<<<<<<< Updated upstream
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+=======
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+>>>>>>> Stashed changes
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -369,10 +373,15 @@
 <wire x1="3.88" y1="-0.95" x2="4.38" y2="-0.95" width="0.01" layer="46" curve="-180"/>
 <wire x1="4.38" y1="-0.95" x2="4.38" y2="-1.55" width="0.01" layer="46"/>
 <wire x1="4.38" y1="-1.55" x2="3.88" y2="-1.55" width="0.01" layer="46" curve="-180"/>
+<<<<<<< Updated upstream
+=======
+<hole x="-3.6" y="0" drill="0.65"/>
+>>>>>>> Stashed changes
 <wire x1="3.75" y1="0.325" x2="3.75" y2="-0.325" width="0.01" layer="46" curve="-180"/>
 <wire x1="3.75" y1="-0.325" x2="3.45" y2="-0.325" width="0.01" layer="46"/>
 <wire x1="3.45" y1="-0.325" x2="3.45" y2="0.325" width="0.01" layer="46" curve="-180"/>
 <wire x1="3.75" y1="0.325" x2="3.45" y2="0.325" width="0.01" layer="46"/>
+<<<<<<< Updated upstream
 <circle x="-3.6" y="0" radius="0.325" width="0.01" layer="46"/>
 </package>
 <package name="BALUN">
@@ -402,6 +411,8 @@
 <pad name="100" x="-4.99" y="-0.02" drill="0.6" shape="offset" rot="R270"/>
 <pad name="1" x="-5.78" y="-1.94" drill="0.6" shape="offset" rot="R45"/>
 <pad name="10" x="-4.99" y="-1.16" drill="0.6"/>
+=======
+>>>>>>> Stashed changes
 </package>
 </packages>
 <symbols>
@@ -638,6 +649,7 @@
 <wire x1="20.5" y1="9" x2="20.5" y2="-9.5" width="0.1524" layer="94"/>
 <wire x1="20.5" y1="-9.5" x2="-20" y2="-9.5" width="0.1524" layer="94"/>
 <wire x1="-20" y1="-9.5" x2="-20" y2="9" width="0.1524" layer="94"/>
+<<<<<<< Updated upstream
 </symbol>
 <symbol name="BALUN">
 <pin name="BAL_1" x="-2.54" y="5.08" length="short" direction="in" rot="R270"/>
@@ -667,6 +679,8 @@
 <pin name="1" x="-5.08" y="0" visible="off" length="short"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+=======
+>>>>>>> Stashed changes
 </symbol>
 </symbols>
 <devicesets>

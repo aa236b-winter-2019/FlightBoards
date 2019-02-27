@@ -16090,7 +16090,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="JP9" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="R34" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C36" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="2.2uF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
@@ -18348,7 +18347,7 @@ Ichrg=988*Vprog/Rprog
 <text x="127.508" y="176.276" size="2.54" layer="97">Power Connectors: USB, Barrel Plug, Battery</text>
 <text x="27.94" y="180.34" size="2.54" layer="97">MicroSD Card</text>
 <wire x1="0" y1="127" x2="0" y2="126.238" width="0.1524" layer="97" style="longdash"/>
-<text x="25.4" y="123.698" size="2.54" layer="97" font="vector" align="top-left">Serial Flash (2MB)</text>
+<text x="25.4" y="123.698" size="2.54" layer="97" font="vector" align="top-left">MRAM 4MB</text>
 <text x="185.166" y="119.634" size="1.778" layer="97">Footswitch Connections</text>
 <text x="154.686" y="157.734" size="1.778" layer="97">Battery Terminals</text>
 <text x="177.292" y="105.156" size="1.778" layer="97">Rail Switch
@@ -18411,9 +18410,6 @@ Connection</text>
 <instance part="J5" gate="G$1" x="156.21" y="131.318" smashed="yes" rot="R90">
 <attribute name="NAME" x="161.798" y="121.666" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="136.652" y="143.51" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY19" gate="G$1" x="7.112" y="115.316" smashed="yes">
-<attribute name="VALUE" x="6.096" y="118.872" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY26" gate="G$1" x="20.574" y="69.088" smashed="yes">
 <attribute name="VALUE" x="19.558" y="72.644" size="1.778" layer="96"/>

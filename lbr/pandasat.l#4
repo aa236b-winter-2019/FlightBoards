@@ -6,7 +6,11 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
+<<<<<<< Updated upstream
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+=======
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+>>>>>>> Stashed changes
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -375,6 +379,7 @@
 <wire x1="3.75" y1="0.325" x2="3.45" y2="0.325" width="0.01" layer="46"/>
 <circle x="-3.6" y="0" radius="0.325" width="0.01" layer="46"/>
 </package>
+<<<<<<< Updated upstream
 <package name="BALUN">
 <smd name="1" x="-0.4" y="1" dx="0.75" dy="0.4" layer="1" rot="R90"/>
 <smd name="2" x="0.4" y="1" dx="0.75" dy="0.4" layer="1" rot="R90"/>
@@ -401,6 +406,15 @@
 <pad name="100" x="-4.99" y="-0.02" drill="0.6" shape="offset" rot="R270"/>
 <pad name="1" x="-5.78" y="-1.94" drill="0.6" shape="offset" rot="R45"/>
 <pad name="10" x="-4.99" y="-1.16" drill="0.6"/>
+=======
+<package name="ECX-31B">
+<smd name="1" x="0.55" y="-0.95" dx="1.1" dy="1.9" layer="1" rot="R180"/>
+<smd name="2" x="3.05" y="-0.95" dx="1.1" dy="1.9" layer="1" rot="R180"/>
+<wire x1="1.3" y1="0" x2="2.3" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.25" y1="-1.9" x2="2.35" y2="-1.9" width="0.1524" layer="21"/>
+<text x="0" y="0.3" size="0.5" layer="25">&gt;NAME</text>
+<text x="-0.1" y="-2.65" size="0.5" layer="27">&gt;VALUE</text>
+>>>>>>> Stashed changes
 </package>
 </packages>
 <symbols>
@@ -638,6 +652,7 @@
 <wire x1="20.5" y1="-9.5" x2="-20" y2="-9.5" width="0.1524" layer="94"/>
 <wire x1="-20" y1="-9.5" x2="-20" y2="9" width="0.1524" layer="94"/>
 </symbol>
+<<<<<<< Updated upstream
 <symbol name="BALUN">
 <pin name="BAL_1" x="-2.54" y="5.08" length="short" direction="in" rot="R270"/>
 <pin name="BAL_2" x="2.54" y="5.08" length="short" direction="in" rot="R270"/>
@@ -666,6 +681,17 @@
 <pin name="1" x="-5.08" y="0" visible="off" length="short"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+=======
+<symbol name="XTAL">
+<wire x1="-0.508" y1="1.016" x2="0.508" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.016" x2="0.508" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-1.016" x2="-0.508" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="-1.016" x2="-0.508" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.1524" layer="94"/>
+<pin name="P$1" x="3.556" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="P$2" x="-3.556" y="0" visible="pad" length="short"/>
+>>>>>>> Stashed changes
 </symbol>
 </symbols>
 <devicesets>
