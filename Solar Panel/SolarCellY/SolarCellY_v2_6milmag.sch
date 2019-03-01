@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -110,6 +110,8 @@
 <wire x1="0" y1="13.8" x2="43.7" y2="13.8" width="0.127" layer="21"/>
 <wire x1="43.7" y1="13.8" x2="43.7" y2="0" width="0.127" layer="21"/>
 <wire x1="43.7" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="6.35" y="7.62" size="5.08" layer="21" align="center">-</text>
+<text x="38.1" y="7.62" size="5.08" layer="21" align="center">+</text>
 </package>
 <package name="SB_DIODE">
 <wire x1="-1.4" y1="0.9" x2="-1.4" y2="-0.9" width="0.127" layer="21"/>
@@ -139,6 +141,8 @@
 <wire x1="22" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <smd name="P$1" x="1" y="4" dx="6" dy="2" layer="1" rot="R90"/>
 <smd name="P$2" x="21" y="4" dx="6" dy="2" layer="1" rot="R90"/>
+<text x="16.51" y="3.937" size="5.08" layer="21" align="center">+</text>
+<text x="3.81" y="4.445" size="5.08" layer="21" align="center">-</text>
 </package>
 </packages>
 <symbols>
@@ -189,7 +193,9 @@
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -225,7 +231,9 @@
 <connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="8.64" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -241,7 +249,9 @@
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="1.8" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

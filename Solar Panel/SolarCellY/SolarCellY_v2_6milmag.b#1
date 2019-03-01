@@ -1514,12 +1514,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U$7" pad="P$2"/>
 <contactref element="U$6" pad="P$2"/>
 <contactref element="D8" pad="POS"/>
-<wire x1="58.135" y1="48.333" x2="58.135" y2="47.848" width="0.254" layer="1"/>
-<wire x1="58.135" y1="47.848" x2="56.642" y2="46.355" width="0.254" layer="1"/>
-<wire x1="56.642" y1="46.355" x2="56.642" y2="34.163" width="0.254" layer="1"/>
-<wire x1="56.642" y1="34.163" x2="57.531" y2="33.274" width="0.254" layer="1"/>
-<wire x1="57.531" y1="33.274" x2="74.041" y2="33.274" width="0.254" layer="1"/>
-<wire x1="74.041" y1="33.274" x2="76.581" y2="35.814" width="0.254" layer="1"/>
+<wire x1="58.135" y1="48.333" x2="58.135" y2="47.34" width="0.254" layer="1"/>
+<wire x1="58.135" y1="47.34" x2="57.531" y2="46.736" width="0.254" layer="1"/>
+<wire x1="57.531" y1="46.736" x2="57.531" y2="33.401" width="0.254" layer="1"/>
+<wire x1="57.531" y1="33.401" x2="74.168" y2="33.401" width="0.254" layer="1"/>
+<wire x1="74.168" y1="33.401" x2="76.581" y2="35.814" width="0.254" layer="1"/>
 <wire x1="76.581" y1="35.814" x2="76.581" y2="48.26" width="0.254" layer="1"/>
 <wire x1="76.581" y1="48.26" x2="94.869" y2="48.26" width="0.254" layer="1"/>
 <wire x1="94.869" y1="48.26" x2="95.8215" y2="47.3075" width="0.254" layer="1"/>

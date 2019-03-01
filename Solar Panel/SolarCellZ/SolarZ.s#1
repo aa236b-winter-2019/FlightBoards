@@ -599,7 +599,8 @@ distributor RS 112-3794</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.1524" drill="0.3">
+<clearance class="0" value="0.127"/>
 </class>
 </classes>
 <parts>

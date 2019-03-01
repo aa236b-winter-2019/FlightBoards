@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -156,6 +156,8 @@ Rev A
 <wire x1="0" y1="13.8" x2="43.7" y2="13.8" width="0.127" layer="21"/>
 <wire x1="43.7" y1="13.8" x2="43.7" y2="0" width="0.127" layer="21"/>
 <wire x1="43.7" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="6.35" y="7.62" size="5.08" layer="21" align="center">-</text>
+<text x="38.1" y="7.62" size="5.08" layer="21" align="center">+</text>
 </package>
 <package name="M20-8760342">
 <smd name="P$1" x="0.5" y="1.575" dx="3.15" dy="1" layer="1" rot="R90"/>
@@ -172,6 +174,8 @@ Rev A
 <wire x1="22" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <smd name="P$1" x="1" y="4" dx="6" dy="2" layer="1" rot="R90"/>
 <smd name="P$2" x="21" y="4" dx="6" dy="2" layer="1" rot="R90"/>
+<text x="16.51" y="3.937" size="5.08" layer="21" align="center">+</text>
+<text x="3.81" y="4.445" size="5.08" layer="21" align="center">-</text>
 </package>
 </packages>
 </library>
@@ -376,30 +380,60 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="D4" library="Solar" package="SB_DIODE" value="SB_DIODE" x="47.19" y="62.522" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.39" y="65.822" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="11" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="50.1784" y="0.7566" smashed="yes"/>
-<element name="13" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="49.7332" y="14.5566" smashed="yes" rot="R180"/>
-<element name="21" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="1.47" y="33.528" smashed="yes"/>
-<element name="23" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="6.0476" y="67.0114" smashed="yes"/>
-<element name="12" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="52.756" y="16.895" smashed="yes"/>
-<element name="14" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="45.181" y="30.695" smashed="yes" rot="R180"/>
-<element name="22" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="1.136" y="52.83" smashed="yes"/>
-<element name="24" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="50.1778" y="67.0762" smashed="yes"/>
-<element name="U$1" library="Solar" package="M20-8760342" value="M20-8760342" x="47.752" y="37.782" smashed="yes" rot="MR90"/>
-<element name="U$2" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="54.093" y="58.381" smashed="yes"/>
-<element name="U$3" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="54.093" y="50.016" smashed="yes"/>
+<element name="11" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="50.1784" y="0.7566" smashed="yes">
+<attribute name="HEIGHT" value="2" x="50.1784" y="0.7566" size="1.778" layer="27" display="off"/>
+</element>
+<element name="13" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="49.7332" y="14.5566" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="2" x="49.7332" y="14.5566" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="21" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="1.47" y="33.528" smashed="yes">
+<attribute name="HEIGHT" value="2" x="1.47" y="33.528" size="1.778" layer="27" display="off"/>
+</element>
+<element name="23" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="6.0476" y="67.0114" smashed="yes">
+<attribute name="HEIGHT" value="2" x="6.0476" y="67.0114" size="1.778" layer="27" display="off"/>
+</element>
+<element name="12" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="52.756" y="16.895" smashed="yes">
+<attribute name="HEIGHT" value="2" x="52.756" y="16.895" size="1.778" layer="27" display="off"/>
+</element>
+<element name="14" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="45.181" y="30.695" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="2" x="45.181" y="30.695" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="22" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="1.136" y="52.83" smashed="yes">
+<attribute name="HEIGHT" value="2" x="1.136" y="52.83" size="1.778" layer="27" display="off"/>
+</element>
+<element name="24" library="Solar" package="SLMD121H04L" value="SLMD121H04L" x="50.1778" y="67.0762" smashed="yes">
+<attribute name="HEIGHT" value="2" x="50.1778" y="67.0762" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$1" library="Solar" package="M20-8760342" value="M20-8760342" x="47.752" y="37.782" smashed="yes" rot="MR90">
+<attribute name="HEIGHT" value="8.64" x="47.752" y="37.782" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="U$2" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="54.093" y="58.381" smashed="yes">
+<attribute name="HEIGHT" value="1.8" x="54.093" y="58.381" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$3" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="54.093" y="50.016" smashed="yes">
+<attribute name="HEIGHT" value="1.8" x="54.093" y="50.016" size="1.778" layer="27" display="off"/>
+</element>
 <element name="D5" library="Solar" package="SB_DIODE" value="SB_DIODE" x="49" y="50" smashed="yes">
 <attribute name="NAME" x="45.7" y="51.2" size="1.27" layer="25"/>
 </element>
 <element name="D8" library="Solar" package="SB_DIODE" value="SB_DIODE" x="56.285" y="48.333" smashed="yes">
 <attribute name="NAME" x="52.985" y="49.533" size="1.27" layer="25"/>
 </element>
-<element name="U$4" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="98.765" y="66.315" smashed="yes" rot="R180"/>
-<element name="U$5" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="98.765" y="58.043" smashed="yes" rot="R180"/>
+<element name="U$4" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="98.765" y="66.315" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="1.8" x="98.765" y="66.315" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="U$5" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="98.765" y="58.043" smashed="yes" rot="R180">
+<attribute name="HEIGHT" value="1.8" x="98.765" y="58.043" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="D6" library="Solar" package="SB_DIODE" value="SB_DIODE" x="74.349" y="41.295" smashed="yes" rot="R270">
 <attribute name="NAME" x="75.549" y="44.595" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="U$6" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="77" y="41" smashed="yes"/>
-<element name="U$7" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="77" y="32" smashed="yes"/>
+<element name="U$6" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="77" y="41" smashed="yes">
+<attribute name="HEIGHT" value="1.8" x="77" y="41" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$7" library="Solar" package="KXOB22-04X3F" value="KXOB22-04X3F" x="77" y="32" smashed="yes">
+<attribute name="HEIGHT" value="1.8" x="77" y="32" size="1.778" layer="27" display="off"/>
+</element>
 <element name="D7" library="Solar" package="SB_DIODE" value="SB_DIODE" x="98.27" y="27.981" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.07" y="24.681" size="1.27" layer="25" rot="R90"/>
 </element>

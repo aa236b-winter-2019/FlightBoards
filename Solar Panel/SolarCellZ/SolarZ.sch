@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -173,12 +173,12 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="con-coax">
+<library name="con-coax" urn="urn:adsk.eagle:library:133">
 <description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
 Radiall  and M/A COM.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="BU-SMA-V">
+<package name="BU-SMA-V" urn="urn:adsk.eagle:footprint:6176/1" library_version="1">
 <description>FEMALE &lt;b&gt;SMA CONNECTOR&lt;/b&gt;&lt;p&gt;
 Radiall&lt;p&gt;
 distributor RS 112-3794</description>
@@ -201,8 +201,18 @@ distributor RS 112-3794</description>
 <text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="BU-SMA-V" urn="urn:adsk.eagle:package:6211/1" type="box" library_version="1">
+<description>FEMALE SMA CONNECTOR
+Radiall
+distributor RS 112-3794</description>
+<packageinstances>
+<packageinstance name="BU-SMA-V"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="BNC-FGND">
+<symbol name="BNC-FGND" urn="urn:adsk.eagle:symbol:6174/1" library_version="1">
 <wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
@@ -218,7 +228,7 @@ distributor RS 112-3794</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BU-SMA-V" prefix="X">
+<deviceset name="BU-SMA-V" urn="urn:adsk.eagle:component:6237/1" prefix="X" library_version="1">
 <description>FEMALE &lt;b&gt;SMA CONNECTOR&lt;/b&gt;&lt;p&gt;
 Radiall&lt;p&gt;
 distributor RS 112-3794</description>
@@ -231,6 +241,9 @@ distributor RS 112-3794</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2 3 4 5"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6211/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -455,6 +468,8 @@ distributor RS 112-3794</description>
 <wire x1="0" y1="13.8" x2="43.7" y2="13.8" width="0.127" layer="21"/>
 <wire x1="43.7" y1="13.8" x2="43.7" y2="0" width="0.127" layer="21"/>
 <wire x1="43.7" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="6.35" y="7.62" size="5.08" layer="21" align="center">-</text>
+<text x="38.1" y="7.62" size="5.08" layer="21" align="center">+</text>
 </package>
 <package name="KXOB22-04X3F">
 <wire x1="0" y1="0" x2="0" y2="8" width="0.127" layer="21"/>
@@ -463,6 +478,8 @@ distributor RS 112-3794</description>
 <wire x1="22" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <smd name="P$1" x="1" y="4" dx="6" dy="2" layer="1" rot="R90"/>
 <smd name="P$2" x="21" y="4" dx="6" dy="2" layer="1" rot="R90"/>
+<text x="16.51" y="3.937" size="5.08" layer="21" align="center">+</text>
+<text x="3.81" y="4.445" size="5.08" layer="21" align="center">-</text>
 </package>
 <package name="SB_DIODE">
 <wire x1="-1.4" y1="0.9" x2="-1.4" y2="-0.9" width="0.127" layer="21"/>
@@ -534,7 +551,9 @@ distributor RS 112-3794</description>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -550,7 +569,9 @@ distributor RS 112-3794</description>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="1.8" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -586,7 +607,9 @@ distributor RS 112-3794</description>
 <connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HEIGHT" value="8.64" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -604,7 +627,7 @@ distributor RS 112-3794</description>
 </class>
 </classes>
 <parts>
-<part name="X1" library="con-coax" deviceset="BU-SMA-V" device=""/>
+<part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="BU-SMA-V" device="" package3d_urn="urn:adsk.eagle:package:6211/1"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="U$1" library="pandasat" deviceset="BALUN" device=""/>
 <part name="U$2" library="pandasat" deviceset="ANTENNA" device=""/>
@@ -966,6 +989,11 @@ with this version.
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
