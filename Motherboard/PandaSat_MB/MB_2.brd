@@ -635,7 +635,7 @@
 <rectangle x1="-29.841521875" y1="88.25735625" x2="-29.417340625" y2="88.3419375" layer="21"/>
 <rectangle x1="-29.671340625" y1="88.3419375" x2="-29.587521875" y2="88.426775" layer="21"/>
 <text x="-22.77305625" y="81.61050625" size="2.032" layer="21" font="vector" ratio="10">PandaSat</text>
-<text x="-12.783390625" y="80.425290625" size="0.508" layer="21" font="vector" ratio="10">Rev A</text>
+<text x="-13.20503125" y="80.80375" size="0.508" layer="21" font="vector" ratio="10">Rev B</text>
 <wire x1="-92.885" y1="0.5" x2="-94.885" y2="2.5" width="0" layer="20" curve="-90"/>
 <wire x1="-3" y1="0.5" x2="-1" y2="2.5" width="0" layer="20" curve="90"/>
 <wire x1="-3" y1="89.67" x2="-1" y2="87.67" width="0" layer="20" curve="-90"/>

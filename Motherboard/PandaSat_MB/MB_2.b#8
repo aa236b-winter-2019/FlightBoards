@@ -4843,10 +4843,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-52.7968" y1="28.89025" x2="-52.7968" y2="28.5973" width="0.3048" layer="1"/>
 <wire x1="-53.4775375" y1="29.0713375" x2="-52.9778875" y2="29.0713375" width="0.3048" layer="1"/>
 <wire x1="-52.9778875" y1="29.0713375" x2="-52.7968" y2="28.89025" width="0.3048" layer="1"/>
-<wire x1="-52.7968" y1="28.5973" x2="-51.49608125" y2="27.29658125" width="0.3048" layer="1"/>
+<wire x1="-51.49608125" y1="27.29658125" x2="-52.7968" y2="28.5973" width="0.3048" layer="1"/>
 <wire x1="-51.0211" y1="27.1181" x2="-51.0211" y2="25.937459375" width="0.1524" layer="1"/>
 <wire x1="-51.0211" y1="25.937459375" x2="-51.3334" y2="25.625159375" width="0.1524" layer="1"/>
-<wire x1="-51.49608125" y1="27.29658125" x2="-51.0211" y2="27.1181" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.0211" y1="27.1181" x2="-51.3176" y2="27.1181" width="0.1524" layer="1"/>
+<wire x1="-51.3176" y1="27.1181" x2="-51.49608125" y2="27.29658125" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$29">
 <contactref element="U7" pad="1"/>
@@ -6503,34 +6504,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="7,39,238aa2f84faf00e0"/>
-<approved hash="7,39,f0bfe695ce59da73"/>
-<approved hash="7,39,e849e6ebcaa7c605"/>
-<approved hash="7,39,8463c72347230463"/>
-<approved hash="7,39,da709b2f1b2f5a70"/>
-<approved hash="7,39,3c7e7e3ffe3fbc7e"/>
-<approved hash="7,39,4e16b1d131d1ce16"/>
-<approved hash="7,39,571ca8df28dfd71c"/>
-<approved hash="7,39,600dcea07d60f435"/>
-<approved hash="7,39,69f72837a837e9f7"/>
-<approved hash="7,39,9e5cdf9d5f9d1e5c"/>
-<approved hash="7,39,b40eb5ce2dbdbf86"/>
-<approved hash="7,39,2592915e195f86eb"/>
-<approved hash="7,39,a533e6f066f02533"/>
-<approved hash="21,19,bc71be73be73bc71"/>
-<approved hash="21,19,78897a8b7acb78c9"/>
-<approved hash="5,1,a996dbacb810a29a"/>
-<approved hash="21,19,4dad4dad4faf4faf"/>
-<approved hash="7,39,72d6b1963195f2d5"/>
-<approved hash="21,19,375f3721351d4b1d"/>
-<approved hash="21,19,3e723c703c703e72"/>
-<approved hash="21,19,0fc00fc00dc28dc2"/>
-<approved hash="7,39,f35c339db39c735d"/>
-<approved hash="19,1,b3deb9dc9721e6d1"/>
-<approved hash="19,1,cad65ad448eb3228"/>
-<approved hash="19,1,01af401ca6200d52"/>
-<approved hash="19,1,fda7a153a64008a0"/>
-<approved hash="19,1,ac3bb5ab46a0ad24"/>
+<approved hash="21,19,12436c436e3f6fc1"/>
+<approved hash="23,1,01fe0b9e08ad02cd"/>
+<approved hash="21,19,1213126aee68106f"/>
 </errors>
 </board>
 </drawing>
