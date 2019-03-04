@@ -13236,10 +13236,10 @@ chip</description>
 <smd name="5" x="5.37" y="0" dx="2.75" dy="1.15" layer="1"/>
 <smd name="10" x="-5.37" y="-2.29" dx="2.75" dy="1.15" layer="1"/>
 <smd name="1" x="-5.37" y="0" dx="2.75" dy="1.15" layer="1"/>
-<wire x1="-6.34" y1="6.37" x2="-6.34" y2="-6.33" width="0.1524" layer="21"/>
-<wire x1="-6.34" y1="-6.33" x2="6.35" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-6.35" x2="6.35" y2="6.35" width="0.1524" layer="21"/>
-<wire x1="6.35" y1="6.35" x2="-6.34" y2="6.37" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="6.35" x2="-6.35" y2="6.35" width="0.1524" layer="21"/>
 <circle x="-5.4" y="0.98" radius="0.18788125" width="0" layer="21"/>
 <wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.127" layer="51"/>
 <wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="51"/>
@@ -13732,12 +13732,12 @@ chip</description>
 <circle x="-3.6" y="0" radius="0.325" width="0.01" layer="46"/>
 </package>
 <package name="ECX-31B">
-<smd name="1" x="0.55" y="-0.95" dx="1.1" dy="1.9" layer="1" rot="R180"/>
-<smd name="2" x="3.05" y="-0.95" dx="1.1" dy="1.9" layer="1" rot="R180"/>
-<wire x1="1.3" y1="0" x2="2.3" y2="0" width="0.1524" layer="21"/>
-<wire x1="1.25" y1="-1.9" x2="2.35" y2="-1.9" width="0.1524" layer="21"/>
-<text x="0" y="0.3" size="0.5" layer="25">&gt;NAME</text>
-<text x="-0.1" y="-2.65" size="0.5" layer="27">&gt;VALUE</text>
+<smd name="1" x="0.55" y="-0.95" dx="1.1" dy="1.9" layer="1"/>
+<smd name="2" x="3.05" y="-0.95" dx="1.1" dy="1.9" layer="1"/>
+<wire x1="1.2" y1="0" x2="2.4" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.2" y1="-1.9" x2="2.4" y2="-1.9" width="0.1524" layer="21"/>
+<text x="0.05" y="0.2" size="0.3048" layer="25">&gt;NAME</text>
+<text x="0" y="-2.4" size="0.3048" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -14443,7 +14443,7 @@ CONN_03x2
 </device>
 </devices>
 </deviceset>
-<deviceset name="ECX-31B" prefix="X">
+<deviceset name="ECX-31B" prefix="X" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
 </gates>
