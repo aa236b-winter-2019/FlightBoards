@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -2542,6 +2542,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="60.198" y1="19.4183" x2="60.0837" y2="19.4183" width="0.254" layer="1"/>
 <wire x1="59.6519" y1="19.4183" x2="60.0837" y2="19.4183" width="0.254" layer="1"/>
 <wire x1="56.3118" y1="16.0782" x2="59.6519" y2="19.4183" width="0.254" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-0.0508" y="82.1436"/>
+<vertex x="100.076" y="82.1436"/>
+<vertex x="100.1268" y="82.0928"/>
+<vertex x="100.1268" y="-0.127"/>
+<vertex x="-0.127" y="-0.127"/>
+<vertex x="-0.1524" y="-0.1016"/>
+<vertex x="-0.1524" y="82.1436"/>
+</polygon>
 </signal>
 <signal name="N$2">
 <contactref element="D1" pad="NEG"/>

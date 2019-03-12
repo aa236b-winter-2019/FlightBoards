@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -401,6 +401,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U$1" library="Solar" package="M20-8760342" value="M20-8760342" x="59.69" y="45.339" smashed="yes" rot="MR90">
 <attribute name="HEIGHT" value="8.64" x="59.69" y="45.339" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
+<element name="D6" library="Solar" package="SB_DIODE" value="SB_DIODE" x="4" y="-4" smashed="yes">
+<attribute name="NAME" x="0.7" y="-2.8" size="1.27" layer="25"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -556,7 +559,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="1" pad="P$2"/>
 <contactref element="2" pad="P$2"/>
 <contactref element="D5" pad="NEG"/>
-<contactref element="U$1" pad="P$6"/>
 <wire x1="92.202" y1="72.644" x2="92.202" y2="66.5099" width="0.254" layer="1"/>
 <wire x1="92.202" y1="66.5099" x2="92.202" y2="50.4538" width="0.254" layer="1"/>
 <wire x1="93.4593" y1="73.9013" x2="92.202" y2="72.644" width="0.254" layer="1"/>
@@ -570,13 +572,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="98.2091" y1="36.8808" x2="98.077228125" y2="39.315496875" width="0.1524" layer="1"/>
 <wire x1="98.077228125" y1="39.315496875" x2="98.072" y2="39.412" width="0.1524" layer="1"/>
 <wire x1="70.485" y1="36.8808" x2="70.485" y2="50.927" width="0.254" layer="1"/>
-<wire x1="66.315" y1="50.879" x2="66.315" y2="50.927" width="0.1524" layer="16"/>
 <wire x1="66.315" y1="50.927" x2="70.485" y2="50.927" width="0.254" layer="16"/>
 <via x="70.485" y="50.927" extent="1-16" drill="0.5"/>
 <wire x1="98.7552" y1="66.3956" x2="98.7552" y2="49.9872" width="0.254" layer="1"/>
 <wire x1="98.7552" y1="49.9872" x2="98.1456" y2="49.3776" width="0.254" layer="1"/>
 <wire x1="98.1456" y1="49.3776" x2="98.1456" y2="39.38386875" width="0.254" layer="1"/>
 <wire x1="98.1456" y1="39.38386875" x2="98.077228125" y2="39.315496875" width="0.254" layer="1"/>
+<contactref element="D6" pad="POS"/>
+<wire x1="5.85" y1="-4" x2="70.485" y2="36.8808" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <wire x1="94.488" y1="80.9244" x2="5.7912" y2="80.9244" width="0.1524" layer="15"/>
@@ -1485,6 +1488,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="71.628" y="47.5488" extent="1-16" drill="0.35"/>
 <wire x1="72.5424" y1="47.5488" x2="71.628" y2="47.5488" width="0.1524" layer="16"/>
 <wire x1="72.5424" y1="22.5552" x2="72.5424" y2="47.5488" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$6">
+<contactref element="U$1" pad="P$6"/>
+<contactref element="D6" pad="NEG"/>
+<wire x1="2.8" y1="-4" x2="66.315" y2="50.879" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

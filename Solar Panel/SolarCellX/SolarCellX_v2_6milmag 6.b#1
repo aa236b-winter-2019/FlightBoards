@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -2238,6 +2238,10 @@ Rev B
 <rectangle x1="36.449" y1="44.5008" x2="37.1602" y2="44.5262" layer="22" rot="R90"/>
 <rectangle x1="36.5379" y1="44.4881" x2="37.1221" y2="44.5135" layer="22" rot="R90"/>
 <rectangle x1="36.6649" y1="44.4881" x2="37.0459" y2="44.5135" layer="22" rot="R90"/>
+<text x="59.5122" y="46.4566" size="0.508" layer="22" rot="MR270">GND</text>
+<text x="64.4906" y="46.5836" size="0.508" layer="22" rot="MR270">MT+</text>
+<text x="59.4868" y="48.895" size="0.508" layer="22" rot="MR270">MT-</text>
+<text x="59.4868" y="51.308" size="0.508" layer="22" rot="MR270">VS</text>
 </plain>
 <libraries>
 <library name="Solar">
