@@ -8,7 +8,7 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -651,8 +651,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="41" y="45" extent="1-16" drill="0.6"/>
 <via x="40" y="46" extent="1-16" drill="0.6"/>
 <via x="39" y="47" extent="1-16" drill="0.6"/>
+<polygon width="0.1524" layer="16">
+<vertex x="25" y="68"/>
+<vertex x="25" y="22"/>
+<vertex x="66" y="22"/>
+<vertex x="66" y="68"/>
+</polygon>
 <via x="37" y="51" extent="1-16" drill="0.6"/>
-<wire x1="39" y1="47" x2="37" y2="51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSOLAR">
 <contactref element="D5" pad="NEG"/>
@@ -6096,14 +6101,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="51.0286" y1="43.4594" x2="52.8192" y2="45.25" width="0.1524" layer="1"/>
 <wire x1="52.8192" y1="45.25" x2="60.25" y2="45.25" width="0.1524" layer="1"/>
 <wire x1="60.25" y1="45.25" x2="60.25" y2="45.15" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$20">
-<polygon width="0.1524" layer="16">
-<vertex x="25" y="61"/>
-<vertex x="25" y="31"/>
-<vertex x="66" y="31"/>
-<vertex x="66" y="61"/>
-</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
