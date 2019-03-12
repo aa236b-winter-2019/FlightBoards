@@ -2310,12 +2310,12 @@ Rev B</text>
 <rectangle x1="25.3619" y1="35.8013" x2="26.0731" y2="35.8267" layer="22" rot="R180"/>
 <rectangle x1="25.4381" y1="35.8267" x2="26.0223" y2="35.8521" layer="22" rot="R180"/>
 <rectangle x1="25.5397" y1="35.8521" x2="25.9207" y2="35.8775" layer="22" rot="R180"/>
-<text x="46.4566" y="52.578" size="0.8128" layer="21">GND</text>
-<text x="44.1706" y="52.5526" size="0.8128" layer="21">MT-</text>
-<text x="46.9138" y="57.658" size="0.8128" layer="21">MT+</text>
-<text x="44.3992" y="57.5818" size="0.8128" layer="21">BW</text>
-<text x="41.8592" y="57.5818" size="0.8128" layer="21">BW</text>
-<text x="42.0878" y="52.5272" size="0.8128" layer="21">VS</text>
+<text x="49.1744" y="52.6034" size="0.8128" layer="22" rot="MR0">GND</text>
+<text x="46.0756" y="52.5526" size="0.8128" layer="22" rot="MR0">MT-</text>
+<text x="48.5648" y="57.5818" size="0.8128" layer="22" rot="MR0">MT+</text>
+<text x="45.9486" y="57.5818" size="0.8128" layer="22" rot="MR0">BW</text>
+<text x="43.6372" y="57.5564" size="0.8128" layer="22" rot="MR0">BW</text>
+<text x="43.4594" y="52.5526" size="0.8128" layer="22" rot="MR0">VS</text>
 </plain>
 <libraries>
 <library name="Solar">
@@ -2907,7 +2907,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="51.1452" y1="57.5248" x2="48.995" y2="57.5248" width="0.6096" layer="1"/>
 <wire x1="48.995" y1="57.4162" x2="47.8912" y2="57.4162" width="0.6096" layer="1"/>
 <wire x1="47.8912" y1="57.4162" x2="45.9486" y2="55.4736" width="0.6096" layer="1"/>
-<wire x1="45.9486" y1="53.1114" x2="45.9486" y2="55.4736" width="0.6096" layer="1"/>
+<wire x1="45.9486" y1="53.2638" x2="45.9486" y2="55.4736" width="0.6096" layer="1"/>
 <wire x1="40.2122" y1="6.1" x2="38.6842" y2="6.1" width="0.6096" layer="1"/>
 <wire x1="38.6842" y1="6.1" x2="37.6" y2="6.1" width="0.6096" layer="1"/>
 <wire x1="40.8686" y1="8.4328" x2="41.402" y2="8.9662" width="0.6096" layer="1"/>
@@ -2924,8 +2924,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="54.1274" y1="47.3456" x2="52.5526" y2="48.9204" width="0.6096" layer="16"/>
 <wire x1="52.5526" y1="48.9204" x2="51.816" y2="48.9204" width="0.6096" layer="16"/>
 <via x="51.816" y="48.9204" extent="1-16" drill="0.381" diameter="0.7"/>
-<wire x1="51.816" y1="48.9204" x2="50.1396" y2="48.9204" width="0.6096" layer="1"/>
-<wire x1="50.1396" y1="48.9204" x2="45.9486" y2="53.1114" width="0.6096" layer="1"/>
+<wire x1="51.816" y1="48.9204" x2="50.292" y2="48.9204" width="0.6096" layer="1"/>
+<wire x1="50.292" y1="48.9204" x2="45.9486" y2="53.2638" width="0.6096" layer="1"/>
 <wire x1="54.1274" y1="6.1976" x2="54.1274" y2="34.5694" width="0.6096" layer="1"/>
 <wire x1="54.1274" y1="34.5694" x2="54.102" y2="34.5948" width="0.6096" layer="1"/>
 <via x="54.102" y="34.5948" extent="1-16" drill="0.381" diameter="0.7"/>
