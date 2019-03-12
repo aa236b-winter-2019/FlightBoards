@@ -2238,10 +2238,6 @@ Rev B
 <rectangle x1="36.449" y1="44.5008" x2="37.1602" y2="44.5262" layer="22" rot="R90"/>
 <rectangle x1="36.5379" y1="44.4881" x2="37.1221" y2="44.5135" layer="22" rot="R90"/>
 <rectangle x1="36.6649" y1="44.4881" x2="37.0459" y2="44.5135" layer="22" rot="R90"/>
-<text x="59.5122" y="46.4566" size="0.508" layer="22" rot="MR270">GND</text>
-<text x="64.4906" y="46.5836" size="0.508" layer="22" rot="MR270">MT+</text>
-<text x="59.4868" y="48.895" size="0.508" layer="22" rot="MR270">MT-</text>
-<text x="59.4868" y="51.308" size="0.508" layer="22" rot="MR270">VS</text>
 </plain>
 <libraries>
 <library name="Solar">
@@ -2542,15 +2538,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="60.198" y1="19.4183" x2="60.0837" y2="19.4183" width="0.254" layer="1"/>
 <wire x1="59.6519" y1="19.4183" x2="60.0837" y2="19.4183" width="0.254" layer="1"/>
 <wire x1="56.3118" y1="16.0782" x2="59.6519" y2="19.4183" width="0.254" layer="1"/>
-<polygon width="0" layer="1">
-<vertex x="-0.0508" y="82.1436"/>
-<vertex x="100.076" y="82.1436"/>
-<vertex x="100.1268" y="82.0928"/>
-<vertex x="100.1268" y="-0.127"/>
-<vertex x="-0.127" y="-0.127"/>
-<vertex x="-0.1524" y="-0.1016"/>
-<vertex x="-0.1524" y="82.1436"/>
-</polygon>
 </signal>
 <signal name="N$2">
 <contactref element="D1" pad="NEG"/>
